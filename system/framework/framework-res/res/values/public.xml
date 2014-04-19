@@ -4924,6 +4924,13 @@
     <public type="string" name="lockscreen_sim_error_message" id="0x010407d4" />
     <public type="string" name="APKTOOL_DUMMY_0698" id="0x01040698" />
     <public type="string" name="APKTOOL_DUMMY_0699" id="0x01040699" />
+    <public type="string" name="global_action_reboot_title" id="0x010407e1" />
+    <public type="string" name="global_action_reboot_normal" id="0x010407e2" />
+    <public type="string" name="global_action_reboot_softreboot" id="0x010407e3" />
+    <public type="string" name="global_action_reboot_recovery" id="0x010407e4" />
+    <public type="string" name="global_action_reboot_bootloader" id="0x010407e5" />
+    <public type="string" name="global_action_reboot_flashmode" id="0x010407e6" />
+    <public type="string" name="global_action_reboot_emergency_download" id="0x010407e7" />
     <public type="dimen" name="app_icon_size" id="0x01050000" />
     <public type="dimen" name="thumbnail_height" id="0x01050001" />
     <public type="dimen" name="thumbnail_width" id="0x01050002" />
@@ -5270,6 +5277,8 @@
     <public type="array" name="common_nicknames" id="0x0107003d" />
     <public type="array" name="imAddressTypes" id="0x0107003e" />
     <public type="array" name="carrier_properties" id="0x0107003f" />
+    <public type="array" name="reboot_options" id="0x01070040" />
+    <public type="array" name="reboot_actions" id="0x01070041" />
     <public type="drawable" name="blank_tile" id="0x010800cc" />
     <public type="drawable" name="default_wallpaper" id="0x01080220" />
     <public type="drawable" name="indicator_code_lock_drag_direction_green_up" id="0x010803b8" />
@@ -7651,6 +7660,7 @@
     <public type="drawable" name="spinner_disabled_holo" id="0x01080821" />
     <public type="drawable" name="spinner_normal_holo" id="0x0108082d" />
     <public type="drawable" name="switch_thumb_holo_light_v2" id="0x010808af" />
+    <public type="drawable" name="ic_lock_reboot" id="0x0108094d" />
     <public type="layout" name="activity_list_item" id="0x01090000" />
     <public type="layout" name="expandable_list_content" id="0x01090001" />
     <public type="layout" name="preference_category" id="0x01090002" />

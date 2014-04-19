@@ -31,7 +31,7 @@
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <bool name="config_animateScreenLights">true</bool>
     <bool name="config_enableScreenshotChord">true</bool>
-    <bool name="config_allowAllRotations">false</bool>
+    <bool name="config_allowAllRotations">true</bool>
     <bool name="config_reverseDefaultRotation">false</bool>
     <bool name="config_deskDockEnablesAccelerometer">true</bool>
     <bool name="config_carDockEnablesAccelerometer">true</bool>

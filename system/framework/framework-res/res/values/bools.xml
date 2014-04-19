@@ -115,7 +115,7 @@
     <bool name="config_update_existing_applications_only">true</bool>
     <bool name="config_enable_glove_mode">true</bool>
     <bool name="config_wifi_use_iw_for_auto_regulatory_domain">true</bool>
-    <bool name="config_enable_data_failure_dialog">false</bool>
+    <bool name="config_enable_data_failure_dialog">true</bool>
     <bool name="lockscreen_isPortrait">true</bool>
     <bool name="config_suppress_usb_msc_notifications">true</bool>
 </resources>

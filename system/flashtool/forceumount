@@ -1,0 +1,12 @@
+#!/sbin/sh
+
+for i in $(mount|grep $1|grep dev|awk '{print $3}')
+do
+        umount -l $i
+        if [ $? -gt 0 ]
+        then
+                exit 1
+        fi
+done
+
+exit 0

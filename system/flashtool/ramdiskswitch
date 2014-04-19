@@ -1,0 +1,98 @@
+#!/system/flashtool/sh
+
+while test $# != 0
+do
+  case $1 in
+  --*=*)
+    ac_option=`expr "X$1" : 'X\([^=]*\)='`
+    ac_optarg=`expr "X$1" : 'X[^=]*=\(.*\)'`
+    ac_shift=:
+    ;;
+  *)
+    ac_option=$1
+    ac_optarg=$2
+    ac_shift=shift
+    ;;
+  esac
+
+  case $ac_option in
+  -compression | --compression)
+     export p_compress=$ac_optarg;;
+  -image | --image)
+     export p_image=$ac_optarg;;
+  *) echo "$ac_option : Invalid Parameter"
+     exit
+     ;;
+  esac
+  shift
+done
+
+if [ -z $p_image ]
+then
+	echo "Image not set"
+	exit 1
+fi
+
+if [ -z $p_compress ]
+then
+	echo "Compression not set"
+	exit 1
+fi
+
+case $p_compress in
+	none);;
+	bz2);;
+	gz);;
+	*)echo "Invalid compression parameter"
+	  exit 1
+	  ;;
+esac
+
+if [ -e /data/local/tmp/kexecboot ]
+then
+	rm -r /data/local/tmp/kexecboot
+fi
+
+if [ -e /data/local/tmp/recovery ]
+then
+	rm -r /data/local/tmp/recovery
+fi
+
+if [ -e $p_image ]
+then
+    	# remount rootfs rw
+    	mount -t rootfs -o remount,rw rootfs /
+    	cp /system/flashtool/forceumount /sbin
+    	cp /system/flashtool/sh /sbin
+
+    	# Umount MTDs
+    	/sbin/forceumount cache
+    	/sbin/forceumount data
+    	/sbin/forceumount sdcard
+
+    	# mount recovery partition
+    	cd /
+    	rm -r /etc
+    	rm -r /sdcard
+    	rm -r /sbin
+    	case $p_compress in
+    		none)
+    			tar -xf $p_image
+    			;;
+    		bz2)
+    			tar -xjf $p_image
+    			;;
+    		gz)
+    			tar -xzf $p_image
+    			;;
+    	esac
+    	# Umount /system
+    	cp /system/flashtool/forceumount /sbin
+    	cp /system/flashtool/sh /sbin
+    	/sbin/forceumount system
+    	# chroot
+    	chroot / /init
+    	exit
+else
+	echo "Invalid image"
+fi

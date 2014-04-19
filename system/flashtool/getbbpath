@@ -1,0 +1,18 @@
+#!/system/flashtool/sh
+
+if test -e /sbin/busybox
+then
+	export BUSYBOX=/sbin/busybox
+fi
+
+if test -e /system/bin/busybox
+then
+	export BUSYBOX=/system/bin/busybox
+fi
+
+if test -e /system/xbin/busybox
+then
+	export BUSYBOX=/system/xbin/busybox
+fi
+
+echo ${BUSYBOX}

@@ -3891,6 +3891,8 @@
     <public type="string" name="APKTOOL_DUMMY_088d" id="0x7f0b088d" />
     <public type="string" name="APKTOOL_DUMMY_088e" id="0x7f0b088e" />
     <public type="string" name="APKTOOL_DUMMY_088f" id="0x7f0b088f" />
+    <public type="string" name="cpu_control" id="0x7f0b09cb" />
+    <public type="string" name="cpu_stats" id="0x7f0b09cc" />
     <public type="integer" name="maximum_user_dictionary_word_length" id="0x7f0c0000" />
     <public type="integer" name="keyguard_appwidget_picker_cols" id="0x7f0c0001" />
     <public type="integer" name="preference_scrollbar_style" id="0x7f0c0002" />

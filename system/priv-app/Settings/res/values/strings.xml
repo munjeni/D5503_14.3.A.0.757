@@ -2625,4 +2625,6 @@ Check PIN."</string>
     <string name="optimized_backlight_summary">Power saving display mode</string>
     <string name="auto_hide_notifications_title">Clear viewed notifications</string>
     <string name="auto_hide_notifications_description">Clear notifications from the status bar when the notification panel has been opened</string>
+    <string name="cpu_control">CPU control</string>
+    <string name="cpu_stats">CPU statistics</string>
 </resources>

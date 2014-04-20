@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">Adăugare persoană de contact cu apelare fixă</string>
+    <string name="delete_fdn_contact">Ştergere persoană de contact cu apelare fixată</string>
+</resources>

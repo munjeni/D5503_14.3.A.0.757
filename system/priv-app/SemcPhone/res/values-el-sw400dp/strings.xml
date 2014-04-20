@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_enabled">Κίνηση δεδομένων κινητής τηλ.</string>
+    <string name="add_fdn_contact">Προσθήκη επαφής προκαθ. κλήσεων</string>
+    <string name="delete_fdn_contact">Διαγραφή επαφής κλήσης καθορισμένων αριθμών</string>
+</resources>

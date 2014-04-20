@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">Добавление контакта в разрешенные номера</string>
+    <string name="delete_fdn_contact">Удалить контакт из разрешённых номеров</string>
+</resources>

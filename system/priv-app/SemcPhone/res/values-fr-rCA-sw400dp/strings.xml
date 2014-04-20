@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">Ajouter un contact avec compos restreinte</string>
+    <string name="delete_fdn_contact">Supprimer le contact avec composition restreinte</string>
+</resources>

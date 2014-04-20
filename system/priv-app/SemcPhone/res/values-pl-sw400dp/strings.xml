@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_enabled">Transmisja danych w sieci komórkowej</string>
+    <string name="add_fdn_contact">Dodaj kontakt do listy ustalonych numerów</string>
+    <string name="delete_fdn_contact">Usuń kontakt z listy ustalonych numerów</string>
+</resources>

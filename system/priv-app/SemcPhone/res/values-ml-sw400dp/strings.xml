@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">ഫിക്സഡ് ഡയലിംഗ് സമ്പര്‍ക്കം കൂട്ടിച്ചേര്‍ക്കുക</string>
+    <string name="delete_fdn_contact">ഫിക്സഡ് ഡയലിംഗ് സമ്പര്‍ക്കം ഇല്ലാതാക്കുക</string>
+</resources>

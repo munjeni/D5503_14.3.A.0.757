@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">Pridėti skambinimo fiksuotais numeriais adresatą</string>
+    <string name="delete_fdn_contact">Ištrinti skambinimo fiksuotais numeriais adresato</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_enabled">Мобилен сообраќај на податоци</string>
+    <string name="add_fdn_contact">Додај контакт за фиксно бирање</string>
+    <string name="delete_fdn_contact">Избриши контакт за фиксно бирање</string>
+</resources>

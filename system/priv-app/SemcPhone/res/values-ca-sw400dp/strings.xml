@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_fdn_contact">Addició del contacte de marcatge fix</string>
+    <string name="delete_fdn_contact">Suprimeix el contacte de marcatge fix</string>
+</resources>

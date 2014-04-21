@@ -122,7 +122,7 @@
     sput-boolean v2, Lcom/android/settings/Settings;->sShowNoHomeNotice:Z
 
     .line 326
-    const/16 v0, 0x2e
+    const/16 v0, 0x2f
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -577,6 +577,16 @@
     const/16 v1, 0x2d
 
     const-class v2, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2e
+
+    const-class v2, Lcom/android/settings/applications/AppOpsSummary;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

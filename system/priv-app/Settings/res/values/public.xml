@@ -299,6 +299,9 @@
     <public type="drawable" name="ic_wifi_lock_signal_2" id="0x7f0200b2" />
     <public type="drawable" name="ic_wifi_lock_signal_3" id="0x7f0200b5" />
     <public type="drawable" name="ic_wifi_lock_signal_4" id="0x7f0200b8" />
+    <public type="drawable" name="ic_settings_cpucontrol" id="0x7f0200fe" />
+    <public type="drawable" name="ic_settings_cpustats" id="0x7f0200ff" />
+    <public type="drawable" name="ic_settings_privacy_guard" id="0x7f020100" />
     <public type="mipmap" name="ic_launcher_settings" id="0x7f030000" />
     <public type="layout" name="account_preference" id="0x7f040001" />
     <public type="layout" name="account_sync_screen" id="0x7f040002" />
@@ -1314,6 +1317,7 @@
     <public type="id" name="vpn_create" id="0x7f080255" />
     <public type="id" name="vpn_lockdown" id="0x7f080256" />
     <public type="id" name="wifi_wps" id="0x7f080257" />
+    <public type="id" name="privacy_guard" id="0x7f080258" />
     <public type="bool" name="has_dock_settings" id="0x7f090000" />
     <public type="bool" name="has_silent_mode" id="0x7f090001" />
     <public type="bool" name="has_powercontrol_widget" id="0x7f090002" />
@@ -3893,6 +3897,7 @@
     <public type="string" name="APKTOOL_DUMMY_088f" id="0x7f0b088f" />
     <public type="string" name="cpu_control" id="0x7f0b09cb" />
     <public type="string" name="cpu_stats" id="0x7f0b09cc" />
+    <public type="string" name="privacy_guard_settings" id="0x7f0b09cd" />
     <public type="integer" name="maximum_user_dictionary_word_length" id="0x7f0c0000" />
     <public type="integer" name="keyguard_appwidget_picker_cols" id="0x7f0c0001" />
     <public type="integer" name="preference_scrollbar_style" id="0x7f0c0002" />

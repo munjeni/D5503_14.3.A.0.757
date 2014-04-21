@@ -4337,6 +4337,7 @@ set_perm(0, 0, 0644, "/system/media/audio/ui/VideoRecord.ogg");
 set_perm(0, 0, 0644, "/system/media/audio/ui/WirelessChargingStarted.ogg");
 set_perm(0, 0, 0644, "/system/media/audio/ui/camera_click.ogg");
 set_perm(0, 0, 0644, "/system/media/audio/ui/camera_focus.ogg");
+set_perm(0, 0, 0644, "/system/priv-app/AntiSpam.apk");
 set_perm(0, 0, 0644, "/system/priv-app/ActiveClipper.apk");
 set_perm(0, 0, 0644, "/system/priv-app/ArtFilterCamera.apk");
 set_perm(0, 0, 0644, "/system/priv-app/BackupRestoreConfirmation.apk");

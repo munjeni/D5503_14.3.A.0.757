@@ -301,7 +301,8 @@
     <public type="drawable" name="ic_wifi_lock_signal_4" id="0x7f0200b8" />
     <public type="drawable" name="ic_settings_cpucontrol" id="0x7f0200fe" />
     <public type="drawable" name="ic_settings_cpustats" id="0x7f0200ff" />
-    <public type="drawable" name="ic_settings_privacy_guard" id="0x7f020100" />
+    <public type="drawable" name="ic_privacy_guard" id="0x7f020100" />
+    <public type="drawable" name="ic_privacy_guard_off" id="0x7f020101" />
     <public type="mipmap" name="ic_launcher_settings" id="0x7f030000" />
     <public type="layout" name="account_preference" id="0x7f040001" />
     <public type="layout" name="account_sync_screen" id="0x7f040002" />
@@ -489,6 +490,8 @@
     <public type="layout" name="access_point_category_for_setup_wizard_xl" id="0x7f040000" />
     <public type="layout" name="settings_top_level" id="0x7f040086" />
     <public type="layout" name="wifi_settings_for_setup_wizard_xl" id="0x7f0400b6" />
+    <public type="layout" name="privacy_guard_manager" id="0x7f0400ba" />
+    <public type="layout" name="privacy_guard_manager_list_row" id="0x7f0400bb" />
     <public type="xml" name="accessibility_settings" id="0x7f050000" />
     <public type="xml" name="account_sync_settings" id="0x7f050001" />
     <public type="xml" name="add_account_settings" id="0x7f050002" />
@@ -586,6 +589,8 @@
     <public type="xml" name="wifi_settings" id="0x7f05005e" />
     <public type="xml" name="wireless_settings" id="0x7f05005f" />
     <public type="xml" name="xperia_connectivity_settings" id="0x7f050060" />
+    <public type="xml" name="privacy_guard_prefs" id="0x7f050061" />
+    <public type="xml" name="privacy_settings_munjeni" id="0x7f050062" />
     <public type="raw" name="media_volume" id="0x7f060000" />
     <public type="raw" name="tethering_help" id="0x7f060001" />
     <public type="raw" name="tethering_usb_help" id="0x7f060002" />
@@ -1317,7 +1322,15 @@
     <public type="id" name="vpn_create" id="0x7f080255" />
     <public type="id" name="vpn_lockdown" id="0x7f080256" />
     <public type="id" name="wifi_wps" id="0x7f080257" />
-    <public type="id" name="privacy_guard" id="0x7f080258" />
+    <public type="id" name="privacy_settings_munjeni" id="0x7f080258" />
+    <public type="id" name="reset" id="0x7f080259" />
+    <public type="id" name="advanced" id="0x7f08025a" />
+    <public type="id" name="help" id="0x7f08025b" />
+    <public type="id" name="apps_list" id="0x7f08025c" />
+    <public type="id" name="show_system_apps" id="0x7f08025d" />
+    <public type="id" name="privacy_guard_prefs" id="0x7f08025e" />
+    <public type="id" name="app_title" id="0x7f08025f" />
+    <public type="id" name="app_privacy_guard_icon" id="0x7f080260" />
     <public type="bool" name="has_dock_settings" id="0x7f090000" />
     <public type="bool" name="has_silent_mode" id="0x7f090001" />
     <public type="bool" name="has_powercontrol_widget" id="0x7f090002" />
@@ -3897,7 +3910,27 @@
     <public type="string" name="APKTOOL_DUMMY_088f" id="0x7f0b088f" />
     <public type="string" name="cpu_control" id="0x7f0b09cb" />
     <public type="string" name="cpu_stats" id="0x7f0b09cc" />
-    <public type="string" name="privacy_guard_settings" id="0x7f0b09cd" />
+    <public type="string" name="privacy_settings_munjeni_title" id="0x7f0b09cd" />
+    <public type="string" name="privacy_guard_switch_label" id="0x7f0b09ce" />
+    <public type="string" name="privacy_guard_dlg_title" id="0x7f0b09cf" />
+    <public type="string" name="privacy_guard_dlg_text" id="0x7f0b09d0" />
+    <public type="string" name="privacy_guard_dlg_system_app_text" id="0x7f0b09d1" />
+    <public type="string" name="privacy_guard_default_title" id="0x7f0b09d2" />
+    <public type="string" name="privacy_guard_default_summary" id="0x7f0b09d3" />
+    <public type="string" name="privacy_guard_manager_title" id="0x7f0b09d4" />
+    <public type="string" name="privacy_guard_manager_summary" id="0x7f0b09d5" />
+    <public type="string" name="privacy_guard_no_user_apps" id="0x7f0b09d6" />
+    <public type="string" name="privacy_guard_filter_does_not_match" id="0x7f0b09d7" />
+    <public type="string" name="privacy_guard_help_title" id="0x7f0b09d8" />
+    <public type="string" name="privacy_guard_reset_title" id="0x7f0b09d9" />
+    <public type="string" name="privacy_guard_reset_text" id="0x7f0b09da" />
+    <public type="string" name="privacy_guard_help_text" id="0x7f0b09db" />
+    <public type="string" name="privacy_guard_manager_show_system_apps" id="0x7f0b09dc" />
+    <public type="string" name="privacy_guard_manager_filter_permissions" id="0x7f0b09dd" />
+    <public type="string" name="privacy_guard_advanced_settings_title" id="0x7f0b09de" />
+    <public type="string" name="blacklist_title" id="0x7f0b09df" />
+    <public type="string" name="blacklist_summary" id="0x7f0b09e0" />
+    <public type="string" name="ok" id="0x7f0b09e1" />
     <public type="integer" name="maximum_user_dictionary_word_length" id="0x7f0c0000" />
     <public type="integer" name="keyguard_appwidget_picker_cols" id="0x7f0c0001" />
     <public type="integer" name="preference_scrollbar_style" id="0x7f0c0002" />
@@ -4026,4 +4059,5 @@
     <public type="menu" name="storage" id="0x7f100003" />
     <public type="menu" name="vpn" id="0x7f100004" />
     <public type="menu" name="wifi_setup" id="0x7f100005" />
+    <public type="menu" name="privacy_guard_manager" id="0x7f100006" />
 </resources>

@@ -109,6 +109,14 @@
     .end annotation
 .end method
 
+.method public abstract resetCounters()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract setMode(IILjava/lang/String;I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {

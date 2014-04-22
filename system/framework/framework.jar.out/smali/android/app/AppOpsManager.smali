@@ -2475,6 +2475,29 @@
     goto :goto_0
 .end method
 
+.method public resetCounters()V
+    .locals 1
+
+    .prologue
+    .line 1328
+    :try_start_0
+    iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
+
+    invoke-interface {v0}, Lcom/android/internal/app/IAppOpsService;->resetCounters()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1331
+    :goto_0
+    return-void
+
+    .line 1329
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
 .method public setMode(IILjava/lang/String;I)V
     .locals 1
     .param p1, "code"    # I

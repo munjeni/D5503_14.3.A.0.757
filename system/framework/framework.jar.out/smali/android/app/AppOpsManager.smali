@@ -2284,6 +2284,36 @@
     goto :goto_0
 .end method
 
+.method public getPrivacyGuardSettingForPackage(ILjava/lang/String;)Z
+    .locals 1
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
+
+    .prologue
+    .line 1310
+    :try_start_0
+    iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
+
+    invoke-interface {v0, p1, p2}, Lcom/android/internal/app/IAppOpsService;->getPrivacyGuardSettingForPackage(ILjava/lang/String;)Z
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    .line 1313
+    :goto_0
+    return v0
+
+    .line 1311
+    :catch_0
+    move-exception v0
+
+    .line 1313
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method public noteOp(I)I
     .locals 2
     .param p1, "op"    # I
@@ -2466,6 +2496,32 @@
     return-void
 
     .line 909
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
+.method public setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
+    .locals 1
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
+    .param p3, "state"    # Z
+
+    .prologue
+    .line 1320
+    :try_start_0
+    iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
+
+    invoke-interface {v0, p1, p2, p3}, Lcom/android/internal/app/IAppOpsService;->setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1323
+    :goto_0
+    return-void
+
+    .line 1321
     :catch_0
     move-exception v0
 

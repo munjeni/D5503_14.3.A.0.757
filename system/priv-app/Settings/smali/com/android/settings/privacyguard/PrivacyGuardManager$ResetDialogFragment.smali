@@ -59,19 +59,19 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0b09d7
+    const v1, 0x7f0b09d9
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0b09d8
+    const v1, 0x7f0b09da
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0b09f9
+    const v1, 0x7f0b09e1
 
     new-instance v2, Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment$2;
 

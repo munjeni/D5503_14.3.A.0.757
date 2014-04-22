@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 154
+    .line 155
     iput-object p1, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$LoadIconsTask;->this$0:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -48,7 +48,7 @@
     .param p2, "x1"    # Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$1;
 
     .prologue
-    .line 154
+    .line 155
     invoke-direct {p0, p1}, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$LoadIconsTask;-><init>(Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;)V
 
     return-void
@@ -61,7 +61,7 @@
     .param p1, "x0"    # [Ljava/lang/Object;
 
     .prologue
-    .line 154
+    .line 155
     check-cast p1, [Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
 
     .end local p1    # "x0":[Ljava/lang/Object;
@@ -77,7 +77,7 @@
     .param p1, "apps"    # [Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
 
     .prologue
-    .line 157
+    .line 158
     move-object v1, p1
 
     .local v1, "arr$":[Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
@@ -92,7 +92,7 @@
 
     aget-object v0, v1, v2
 
-    .line 159
+    .line 160
     .local v0, "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
     :try_start_0
     iget-object v5, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$LoadIconsTask;->this$0:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
@@ -108,7 +108,7 @@
 
     move-result-object v3
 
-    .line 160
+    .line 161
     .local v3, "icon":Landroid/graphics/drawable/Drawable;
     iget-object v5, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$LoadIconsTask;->this$0:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v5, v6, v3}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 161
+    .line 162
     const/4 v5, 0x0
 
     new-array v5, v5, [Ljava/lang/Void;
@@ -130,21 +130,21 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 157
+    .line 158
     .end local v3    # "icon":Landroid/graphics/drawable/Drawable;
     :goto_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 167
+    .line 168
     .end local v0    # "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
     :cond_0
     const/4 v5, 0x0
 
     return-object v5
 
-    .line 162
+    .line 163
     .restart local v0    # "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
     :catch_0
     move-exception v5
@@ -157,7 +157,7 @@
     .param p1, "x0"    # [Ljava/lang/Object;
 
     .prologue
-    .line 154
+    .line 155
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
@@ -171,11 +171,11 @@
     .param p1, "progress"    # [Ljava/lang/Void;
 
     .prologue
-    .line 172
+    .line 173
     iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$LoadIconsTask;->this$0:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
 
     invoke-virtual {v0}, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->notifyDataSetChanged()V
 
-    .line 173
+    .line 174
     return-void
 .end method

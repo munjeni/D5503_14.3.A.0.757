@@ -287,7 +287,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
 
-    const v1, 0x7f0b09d4
+    const v1, 0x7f0b09d6
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

@@ -65,6 +65,7 @@
     <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"/>
     <uses-permission android:name="com.sonyericsson.r2r.client.permission.START_R2R"/>
     <uses-permission android:name="com.sonyericsson.permission.IDD"/>
+    <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE"/>
     <protected-broadcast android:name="com.sonyericsson.action.APN_RESET_TO_DEFAULT"/>
     <application android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_settings" android:label="@string/settings_label" android:requiredForAllUsers="true" android:supportsRtl="true" android:taskAffinity="" android:theme="@style/Theme.Settings">
         <uses-library android:name="com.sonyericsson.idd"/>

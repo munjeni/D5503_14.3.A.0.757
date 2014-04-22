@@ -36,7 +36,7 @@
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 50
-    const v1, 0x7f08025e
+    const v1, 0x7f050061
 
     invoke-virtual {p0, v1}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->addPreferencesFromResource(I)V
 

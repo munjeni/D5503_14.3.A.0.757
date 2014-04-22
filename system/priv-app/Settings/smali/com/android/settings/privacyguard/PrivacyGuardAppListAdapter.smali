@@ -273,7 +273,7 @@
     .param p1, "section"    # I
 
     .prologue
-    .line 120
+    .line 121
     if-ltz p1, :cond_0
 
     iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->mSections:[Ljava/lang/String;
@@ -282,11 +282,11 @@
 
     if-lt p1, v0, :cond_1
 
-    .line 121
+    .line 122
     :cond_0
     const/4 v0, -0x1
 
-    .line 124
+    .line 125
     :goto_0
     return v0
 
@@ -303,7 +303,7 @@
     .param p1, "position"    # I
 
     .prologue
-    .line 129
+    .line 130
     if-ltz p1, :cond_0
 
     invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->getCount()I
@@ -312,16 +312,16 @@
 
     if-lt p1, v1, :cond_2
 
-    .line 130
+    .line 131
     :cond_0
     const/4 v0, -0x1
 
-    .line 143
+    .line 144
     :cond_1
     :goto_0
     return v0
 
-    .line 133
+    .line 134
     :cond_2
     iget-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->mPositions:[I
 
@@ -329,7 +329,7 @@
 
     move-result v0
 
-    .line 143
+    .line 144
     .local v0, "index":I
     if-gez v0, :cond_1
 
@@ -344,7 +344,7 @@
     .locals 1
 
     .prologue
-    .line 148
+    .line 149
     iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->mSections:[Ljava/lang/String;
 
     return-object v0
@@ -457,16 +457,16 @@
 
     if-eqz v4, :cond_2
 
-    const v3, 0x7f0200fe
+    const v3, 0x7f020100
 
-    .line 113
+    .line 114
     .local v3, "privacyGuardDrawableResId":I
     :goto_2
     iget-object v4, v1, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$PrivacyGuardAppViewHolder;->privacyGuardIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 115
+    .line 116
     return-object p2
 
     .line 101
@@ -494,7 +494,7 @@
     .line 111
     .end local v2    # "icon":Landroid/graphics/drawable/Drawable;
     :cond_2
-    const v3, 0x7f0200ff
+    const v3, 0x7f020101
 
     goto :goto_2
 .end method

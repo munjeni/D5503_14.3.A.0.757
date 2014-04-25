@@ -1,0 +1,18 @@
+version: 2.0.0-119f9d-SNAPSHOT
+apkFileName: Conversations.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '57017347'
+  versionName: 27.3.A.1.3
+compressionType: false
+unknownFiles:
+  semcbuild-command.txt: '8'

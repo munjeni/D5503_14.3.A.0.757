@@ -17,6 +17,10 @@
 # instance fields
 .field public dialogResult:Lcom/android/server/PermissionDialogResult;
 
+.field public allowedCount:I
+
+.field public ignoredCount:I
+
 .field public duration:I
 
 .field final mClientTokens:Ljava/util/ArrayList;

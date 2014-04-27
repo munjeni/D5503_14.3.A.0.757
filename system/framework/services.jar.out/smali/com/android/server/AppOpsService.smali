@@ -17,6 +17,8 @@
 # static fields
 .field static final DEBUG:Z = false
 
+.field private static final PRIVACY_GUARD_OP_STATES:[I
+
 .field static final SHOW_PERMISSION_DIALOG:I = 0x1
 
 .field static final TAG:Ljava/lang/String; = "AppOps"
@@ -117,6 +119,33 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 73
+    const/4 v0, 0x5
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/android/server/AppOpsService;->PRIVACY_GUARD_OP_STATES:[I
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x0
+        0x6
+        0x4
+        0x8
+        0xe
+    .end array-data
+.end method
+
 .method public constructor <init>(Ljava/io/File;)V
     .locals 1
     .param p1, "storagePath"    # Ljava/io/File;
@@ -3035,6 +3064,60 @@
     .end local v5    # "res":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/AppOpsManager$PackageOps;>;"
     .restart local v4    # "res":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/AppOpsManager$PackageOps;>;"
     goto :goto_3
+.end method
+
+.method public getPrivacyGuardSettingForPackage(ILjava/lang/String;)Z
+    .locals 6
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
+
+    .prologue
+    sget-object v0, Lcom/android/server/AppOpsService;->PRIVACY_GUARD_OP_STATES:[I
+
+    .local v0, "arr$":[I
+    array-length v2, v0
+
+    .local v2, "len$":I
+    const/4 v1, 0x0
+
+    .local v1, "i$":I
+    :goto_0
+    if-ge v1, v2, :cond_1
+
+    aget v3, v0, v1
+
+    .local v3, "op":I
+    invoke-static {v3}, Landroid/app/AppOpsManager;->opToSwitch(I)I
+
+    move-result v4
+
+    .local v4, "switchOp":I
+    invoke-virtual {p0, v3, p1, p2}, Lcom/android/server/AppOpsService;->checkOperation(IILjava/lang/String;)I
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const/4 v5, 0x1
+
+    .end local v3    # "op":I
+    .end local v4    # "switchOp":I
+    :goto_1
+    return v5
+
+    .restart local v3    # "op":I
+    .restart local v4    # "switchOp":I
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .end local v3    # "op":I
+    .end local v4    # "switchOp":I
+    :cond_1
+    const/4 v5, 0x0
+
+    goto :goto_1
 .end method
 
 .method public getToken(Landroid/os/IBinder;)Landroid/os/IBinder;
@@ -6120,6 +6203,145 @@
     goto :goto_4
 .end method
 
+.method public resetCounters()V
+    .locals 13
+
+    .prologue
+    iget-object v8, p0, Lcom/android/server/AppOpsService;->mContext:Landroid/content/Context;
+
+    const-string v9, "android.permission.UPDATE_APP_OPS_STATS"
+
+    invoke-static {}, Landroid/os/Binder;->getCallingPid()I
+
+    move-result v10
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v11
+
+    const/4 v12, 0x0
+
+    invoke-virtual {v8, v9, v10, v11, v12}, Landroid/content/Context;->enforcePermission(Ljava/lang/String;IILjava/lang/String;)V
+
+    monitor-enter p0
+
+    const/4 v2, 0x0
+
+    .local v2, "i":I
+    :goto_0
+    :try_start_0
+    iget-object v8, p0, Lcom/android/server/AppOpsService;->mUidOps:Landroid/util/SparseArray;
+
+    invoke-virtual {v8}, Landroid/util/SparseArray;->size()I
+
+    move-result v8
+
+    if-ge v2, v8, :cond_2
+
+    iget-object v8, p0, Lcom/android/server/AppOpsService;->mUidOps:Landroid/util/SparseArray;
+
+    invoke-virtual {v8, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/util/HashMap;
+
+    .local v6, "packages":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/server/AppOpsService$Ops;>;"
+    invoke-virtual {v6}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v8
+
+    invoke-interface {v8}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    .local v3, "i$":Ljava/util/Iterator;
+    :cond_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .local v1, "ent":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AppOpsService$Ops;>;"
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/String;
+
+    .local v5, "packageName":Ljava/lang/String;
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/android/server/AppOpsService$Ops;
+
+    .local v7, "pkgOps":Lcom/android/server/AppOpsService$Ops;
+    const/4 v4, 0x0
+
+    .local v4, "j":I
+    :goto_1
+    invoke-virtual {v7}, Lcom/android/server/AppOpsService$Ops;->size()I
+
+    move-result v8
+
+    if-ge v4, v8, :cond_0
+
+    invoke-virtual {v7, v4}, Lcom/android/server/AppOpsService$Ops;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/AppOpsService$Op;
+
+    .local v0, "curOp":Lcom/android/server/AppOpsService$Op;
+    const/4 v8, 0x0
+
+    iput v8, v0, Lcom/android/server/AppOpsService$Op;->allowedCount:I
+
+    const/4 v8, 0x0
+
+    iput v8, v0, Lcom/android/server/AppOpsService$Op;->ignoredCount:I
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    .end local v0    # "curOp":Lcom/android/server/AppOpsService$Op;
+    .end local v1    # "ent":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AppOpsService$Ops;>;"
+    .end local v4    # "j":I
+    .end local v5    # "packageName":Ljava/lang/String;
+    .end local v7    # "pkgOps":Lcom/android/server/AppOpsService$Ops;
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .end local v3    # "i$":Ljava/util/Iterator;
+    .end local v6    # "packages":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/server/AppOpsService$Ops;>;"
+    :cond_2
+    invoke-direct {p0}, Lcom/android/server/AppOpsService;->scheduleWriteNowLocked()V
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v8
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v8
+.end method
+
 .method public setMode(IILjava/lang/String;I)V
     .locals 8
     .param p1, "code"    # I
@@ -6355,6 +6577,55 @@
     .end local v4    # "repCbs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/AppOpsService$Callback;>;"
     .restart local v3    # "repCbs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/AppOpsService$Callback;>;"
     goto :goto_1
+.end method
+
+.method public setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
+    .locals 6
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
+    .param p3, "state"    # Z
+
+    .prologue
+    sget-object v0, Lcom/android/server/AppOpsService;->PRIVACY_GUARD_OP_STATES:[I
+
+    .local v0, "arr$":[I
+    array-length v2, v0
+
+    .local v2, "len$":I
+    const/4 v1, 0x0
+
+    .local v1, "i$":I
+    :goto_0
+    if-ge v1, v2, :cond_1
+
+    aget v3, v0, v1
+
+    .local v3, "op":I
+    invoke-static {v3}, Landroid/app/AppOpsManager;->opToSwitch(I)I
+
+    move-result v4
+
+    .local v4, "switchOp":I
+    if-eqz p3, :cond_0
+
+    const/4 v5, 0x1
+
+    :goto_1
+    invoke-virtual {p0, v4, p1, p2, v5}, Lcom/android/server/AppOpsService;->setMode(IILjava/lang/String;I)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v5, 0x0
+
+    goto :goto_1
+
+    .end local v3    # "op":I
+    .end local v4    # "switchOp":I
+    :cond_1
+    return-void
 .end method
 
 .method public shutdown()V

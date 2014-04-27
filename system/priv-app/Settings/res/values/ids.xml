@@ -607,4 +607,8 @@
     <item type="id" name="privacy_guard_prefs">false</item>
     <item type="id" name="app_title">false</item>
     <item type="id" name="app_privacy_guard_icon">false</item>
+    <item type="id" name="op_counts">false</item>
+    <item type="id" name="spinnerWidget">false</item>
+    <item type="id" name="show_user_apps">false</item>
+    <item type="id" name="reset_counters">false</item>
 </resources>

@@ -271,7 +271,7 @@
     if-lez v1, :cond_1
 
     .line 398
-    const v5, 0x7f0e0001
+    const v5, 0x7f0e000d
 
     new-array v6, v9, [Ljava/lang/Object;
 
@@ -287,7 +287,7 @@
 
     .line 400
     .local v4, "quantity":Ljava/lang/String;
-    const v5, 0x7f0803be
+    const v5, 0x7f0b0a44
 
     const/4 v6, 0x2
 
@@ -398,7 +398,7 @@
     .param p1, "res"    # Landroid/content/res/Resources;
 
     .prologue
-    const v9, 0x7f0e0001
+    const v9, 0x7f0e000d
 
     const/4 v8, 0x1
 
@@ -471,7 +471,7 @@
     if-nez v2, :cond_1
 
     .line 424
-    const v5, 0x7f0803bf
+    const v5, 0x7f0b0a45
 
     new-array v6, v8, [Ljava/lang/Object;
 
@@ -488,7 +488,7 @@
     if-nez v0, :cond_2
 
     .line 426
-    const v5, 0x7f0803c0
+    const v5, 0x7f0b0a46
 
     new-array v6, v8, [Ljava/lang/Object;
 
@@ -502,7 +502,7 @@
 
     .line 428
     :cond_2
-    const v5, 0x7f0803c1
+    const v5, 0x7f0b0a47
 
     const/4 v6, 0x2
 
@@ -666,7 +666,7 @@
     if-eqz v0, :cond_0
 
     .line 446
-    const v0, 0x7f08084a
+    const v0, 0x7f0b051c
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -711,7 +711,7 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    const v0, 0x7f08084b
+    const v0, 0x7f0b051d
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

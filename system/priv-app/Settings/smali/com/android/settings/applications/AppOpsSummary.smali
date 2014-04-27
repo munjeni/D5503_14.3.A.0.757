@@ -195,13 +195,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f0803c5
+    const v1, 0x7f0b0a4b
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0803c6
+    const v1, 0x7f0b0a4c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -309,12 +309,12 @@
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 167
-    const v0, 0x7f100001
+    const v0, 0x7f100007
 
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 168
-    const v0, 0x7f0d02e3
+    const v0, 0x7f080263
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -327,7 +327,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
 
     .line 169
-    const v0, 0x7f0d02e4
+    const v0, 0x7f08025d
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -356,7 +356,7 @@
     .line 121
     iget-object v2, p0, Lcom/android/settings/applications/AppOpsSummary;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f04000b
+    const v3, 0x7f040009
 
     const/4 v4, 0x0
 
@@ -376,7 +376,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00af
+    const v3, 0x7f070081
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 
@@ -385,7 +385,7 @@
     iput-object v2, p0, Lcom/android/settings/applications/AppOpsSummary;->mPageNames:[Ljava/lang/CharSequence;
 
     .line 128
-    const v2, 0x7f0d001b
+    const v2, 0x7f080013
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -421,7 +421,7 @@
     invoke-virtual {v2, v3}, Landroid/support/v4/view/ViewPager;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V
 
     .line 132
-    const v2, 0x7f0d001c
+    const v2, 0x7f080014
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -579,7 +579,7 @@
 
     .line 201
     :pswitch_data_0
-    .packed-switch 0x7f0d02e3
+    .packed-switch 0x7f080263
         :pswitch_0
         :pswitch_1
         :pswitch_2

@@ -320,7 +320,7 @@
 
     move-object/from16 v21, v0
 
-    const v22, 0x7f040009
+    const v22, 0x7f040007
 
     move-object/from16 v0, p0
 
@@ -428,7 +428,7 @@
     if-eqz v21, :cond_1
 
     .line 163
-    const v21, 0x7f0d0013
+    const v21, 0x7f08000d
 
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -457,7 +457,7 @@
     .end local v15    # "pi":Landroid/content/pm/PermissionInfo;
     :cond_1
     :goto_3
-    const v21, 0x7f0d0014
+    const v21, 0x7f08000e
 
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -480,7 +480,7 @@
     invoke-virtual/range {v21 .. v22}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 172
-    const v21, 0x7f0d0017
+    const v21, 0x7f080261
 
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -497,7 +497,7 @@
     invoke-virtual/range {v21 .. v22}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 174
-    const v21, 0x7f0d0016
+    const v21, 0x7f08000f
 
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -518,7 +518,7 @@
     invoke-virtual/range {v21 .. v22}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 176
-    const v21, 0x7f0d0015
+    const v21, 0x7f080262
 
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -783,7 +783,7 @@
     .line 94
     iget-object v3, p0, Lcom/android/settings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f0d0011
+    const v4, 0x7f08000b
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -802,7 +802,7 @@
     invoke-virtual {v0, v8, v3, v8, v4}, Landroid/view/View;->setPaddingRelative(IIII)V
 
     .line 97
-    const v3, 0x7f0d0019
+    const v3, 0x7f080011
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -823,7 +823,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 100
-    const v3, 0x7f0d001a
+    const v3, 0x7f080012
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -844,7 +844,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 103
-    const v3, 0x7f0d0124
+    const v3, 0x7f0800bb
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -871,7 +871,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080833
+    const v5, 0x7f0b0504
 
     const/4 v6, 0x1
 
@@ -1022,7 +1022,7 @@
 
     .prologue
     .line 230
-    const v1, 0x7f040008
+    const v1, 0x7f040006
 
     const/4 v2, 0x0
 
@@ -1040,7 +1040,7 @@
     iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
 
     .line 234
-    const v1, 0x7f0d0012
+    const v1, 0x7f08000c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

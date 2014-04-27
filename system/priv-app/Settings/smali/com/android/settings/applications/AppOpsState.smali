@@ -403,7 +403,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00ad
+    const v1, 0x7f07007f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 
@@ -416,7 +416,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00ae
+    const v1, 0x7f070080
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 

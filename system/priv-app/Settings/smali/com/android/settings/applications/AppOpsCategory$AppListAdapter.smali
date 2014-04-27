@@ -150,7 +150,7 @@
     .line 286
     iget-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f04000a
+    const v3, 0x7f040008
 
     invoke-virtual {v2, v3, p3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     .line 292
     .local v0, "item":Lcom/android/settings/applications/AppOpsState$AppOpEntry;
-    const v2, 0x7f0d0019
+    const v2, 0x7f080011
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -184,7 +184,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 294
-    const v2, 0x7f0d001a
+    const v2, 0x7f080012
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -203,7 +203,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 295
-    const v2, 0x7f0d0014
+    const v2, 0x7f08000e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -220,7 +220,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 296
-    const v2, 0x7f0d0016
+    const v2, 0x7f08000f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

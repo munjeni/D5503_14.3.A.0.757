@@ -494,7 +494,7 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.NotificationStation"/>
         </activity>
-        <activity android:enabled="true" android:excludeFromRecents="true" android:label="@string/app_ops_settings" android:name="Settings$AppOpsSummaryActivity" android:taskAffinity="">
+        <activity android:excludeFromRecents="true" android:label="@string/app_ops_settings" android:name="Settings$AppOpsSummaryActivity" android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.settings.APP_OPS_SETTINGS"/>

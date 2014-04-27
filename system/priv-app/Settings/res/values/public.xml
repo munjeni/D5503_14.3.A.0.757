@@ -1327,11 +1327,11 @@
     <public type="id" name="vpn_lockdown" id="0x7f080256" />
     <public type="id" name="wifi_wps" id="0x7f080257" />
     <public type="id" name="privacy_settings_munjeni" id="0x7f080258" />
-    <public type="id" name="reset" id="0x7f080259" />
-    <public type="id" name="advanced" id="0x7f08025a" />
-    <public type="id" name="help" id="0x7f08025b" />
+    <public type="id" name="show_system_apps" id="0x7f080259" />
+    <public type="id" name="reset" id="0x7f08025a" />
+    <public type="id" name="advanced" id="0x7f08025b" />
     <public type="id" name="apps_list" id="0x7f08025c" />
-    <public type="id" name="show_system_apps" id="0x7f08025d" />
+    <public type="id" name="help" id="0x7f08025d" />
     <public type="id" name="privacy_guard_prefs" id="0x7f08025e" />
     <public type="id" name="app_title" id="0x7f08025f" />
     <public type="id" name="app_privacy_guard_icon" id="0x7f080260" />

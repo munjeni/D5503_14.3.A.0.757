@@ -33,7 +33,7 @@
 
 .field public static final OP_ACCESS_NOTIFICATIONS:I = 0x19
 
-.field public static final OP_ALARM_WAKEUP:I = 0x2e
+.field public static final OP_ALARM_WAKEUP:I = 0x32
 
 .field public static final OP_AUDIO_ALARM_VOLUME:I = 0x25
 
@@ -51,7 +51,7 @@
 
 .field public static final OP_BLUETOOTH_CHANGE:I = 0x2c
 
-.field public static final OP_BOOT_COMPLETED:I = 0x32
+.field public static final OP_BOOT_COMPLETED:I = 0x31
 
 .field public static final OP_CALL_PHONE:I = 0xd
 
@@ -87,7 +87,7 @@
 
 .field public static final OP_READ_ICC_SMS:I = 0x15
 
-.field public static final OP_READ_MMS:I = 0x30
+.field public static final OP_READ_MMS:I = 0x2f
 
 .field public static final OP_READ_SMS:I = 0xe
 
@@ -101,7 +101,7 @@
 
 .field public static final OP_RECORD_AUDIO:I = 0x1b
 
-.field public static final OP_SEND_MMS:I = 0x2f
+.field public static final OP_SEND_MMS:I = 0x2e
 
 .field public static final OP_SEND_SMS:I = 0x14
 
@@ -129,7 +129,7 @@
 
 .field public static final OP_WRITE_ICC_SMS:I = 0x16
 
-.field public static final OP_WRITE_MMS:I = 0x31
+.field public static final OP_WRITE_MMS:I = 0x30
 
 .field public static final OP_WRITE_SETTINGS:I = 0x17
 
@@ -704,31 +704,31 @@
 
     const/16 v2, 0x2e
 
-    const-string v3, "ALARM_WAKEUP"
+    const-string v3, "SEND_MMS"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0x2f
 
-    const-string v3, "SEND_MMS"
+    const-string v3, "READ_MMS"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0x30
 
-    const-string v3, "READ_MMS"
+    const-string v3, "WRITE_MMS"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0x31
 
-    const-string v3, "WRITE_MMS"
+    const-string v3, "BOOT_COMPLETED"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0x32
 
-    const-string v3, "BOOT_COMPLETED"
+    const-string v3, "ALARM_WAKEUP"
 
     aput-object v3, v1, v2
 

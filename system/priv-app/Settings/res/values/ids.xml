@@ -611,4 +611,5 @@
     <item type="id" name="spinnerWidget">false</item>
     <item type="id" name="show_user_apps">false</item>
     <item type="id" name="reset_counters">false</item>
+    <item type="id" name="privacy_guard_switch">false</item>
 </resources>

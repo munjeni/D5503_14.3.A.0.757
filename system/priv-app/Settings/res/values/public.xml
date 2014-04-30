@@ -1339,6 +1339,7 @@
     <public type="id" name="spinnerWidget" id="0x7f080262" />
     <public type="id" name="show_user_apps" id="0x7f080263" />
     <public type="id" name="reset_counters" id="0x7f080264" />
+    <public type="id" name="privacy_guard_switch" id="0x7f080265" />
     <public type="bool" name="has_dock_settings" id="0x7f090000" />
     <public type="bool" name="has_silent_mode" id="0x7f090001" />
     <public type="bool" name="has_powercontrol_widget" id="0x7f090002" />

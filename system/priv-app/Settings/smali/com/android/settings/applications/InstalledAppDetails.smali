@@ -26,6 +26,8 @@
 
 .field private mAppEntry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
 
+.field private mAppOps:Landroid/app/AppOpsManager;
+
 .field private mAppSize:Landroid/widget/TextView;
 
 .field private mAppVersion:Landroid/widget/TextView;
@@ -132,6 +134,8 @@
 .field private mPackageMoveObserver:Lcom/android/settings/applications/InstalledAppDetails$PackageMoveObserver;
 
 .field private mPm:Landroid/content/pm/PackageManager;
+
+.field private mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
 
 .field private mRootView:Landroid/view/View;
 
@@ -319,6 +323,18 @@
     return-void
 .end method
 
+.method static synthetic access$1201(Lcom/android/settings/applications/InstalledAppDetails;Z)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/settings/applications/InstalledAppDetails;
+    .param p1, "x1"    # Z
+
+    .prologue
+    .line 98
+    invoke-direct {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails;->setPrivacyGuard(Z)V
+
+    return-void
+.end method
+
 .method static synthetic access$1300(Lcom/android/settings/applications/InstalledAppDetails;Z)V
     .locals 0
     .param p0, "x0"    # Lcom/android/settings/applications/InstalledAppDetails;
@@ -331,6 +347,17 @@
     return-void
 .end method
 
+.method static synthetic access$1301(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/widget/CompoundButton;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/settings/applications/InstalledAppDetails;
+
+    .prologue
+    .line 98
+    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mNotificationSwitch:Landroid/widget/CompoundButton;
+
+    return-object v0
+.end method
+
 .method static synthetic access$1400(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/content/pm/PackageManager;
     .locals 1
     .param p0, "x0"    # Lcom/android/settings/applications/InstalledAppDetails;
@@ -338,6 +365,17 @@
     .prologue
     .line 102
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPm:Landroid/content/pm/PackageManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1401(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/widget/CompoundButton;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/settings/applications/InstalledAppDetails;
+
+    .prologue
+    .line 98
+    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
 
     return-object v0
 .end method
@@ -1184,6 +1222,68 @@
     .line 408
     :catch_0
     move-exception v2
+
+    goto :goto_0
+.end method
+
+.method private initPrivacyGuardButton()V
+    .locals 4
+
+    .prologue
+    .line 405
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
+
+    if-nez v1, :cond_0
+
+    .line 413
+    :goto_0
+    return-void
+
+    .line 408
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+
+    move-result-object v1
+
+    const-string v2, "appops"
+
+    invoke-virtual {v1, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/app/AppOpsManager;
+
+    iput-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppOps:Landroid/app/AppOpsManager;
+
+    .line 409
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppOps:Landroid/app/AppOpsManager;
+
+    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppEntry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+
+    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+
+    iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppEntry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+
+    iget-object v3, v3, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+
+    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v3}, Landroid/app/AppOpsManager;->getPrivacyGuardSettingForPackage(ILjava/lang/String;)Z
+
+    move-result v0
+
+    .line 411
+    .local v0, "isEnabled":Z
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
+
+    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setChecked(Z)V
+
+    .line 412
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
+
+    invoke-virtual {v1, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     goto :goto_0
 .end method
@@ -3650,6 +3750,32 @@
     goto :goto_1
 .end method
 
+.method private setPrivacyGuard(Z)V
+    .locals 3
+    .param p1, "enabled"    # Z
+
+    .prologue
+    .line 1370
+    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppOps:Landroid/app/AppOpsManager;
+
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppEntry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+
+    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+
+    iget v1, v1, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->mAppEntry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+
+    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+
+    iget-object v2, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2, p1}, Landroid/app/AppOpsManager;->setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
+
+    .line 1372
+    return-void
+.end method
+
 .method private showDialogInner(II)V
     .locals 4
 
@@ -4002,6 +4128,27 @@
     .line 1451
     :cond_4
     invoke-direct {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->setNotificationsEnabled(Z)V
+
+    goto :goto_0
+
+    :cond_5
+    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
+
+    if-ne p1, v0, :cond_0
+
+    .line 1472
+    if-eqz p2, :cond_6
+
+    .line 1473
+    const/16 v0, 0xa
+
+    invoke-direct {p0, v0, v2}, Lcom/android/settings/applications/InstalledAppDetails;->showDialogInner(II)V
+
+    goto :goto_0
+
+    .line 1475
+    :cond_6
+    invoke-direct {p0, v2}, Lcom/android/settings/applications/InstalledAppDetails;->setPrivacyGuard(Z)V
 
     goto :goto_0
 .end method
@@ -5012,6 +5159,16 @@
     check-cast v3, Landroid/widget/CompoundButton;
 
     iput-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->mNotificationSwitch:Landroid/widget/CompoundButton;
+
+    const v3, 0x7f080265
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/widget/CompoundButton;
+
+    iput-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPrivacyGuardSwitch:Landroid/widget/CompoundButton;
 
     .line 519
     return-object v2

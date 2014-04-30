@@ -3159,11 +3159,18 @@
     :cond_17
     iput-boolean v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->mShowUninstalled:Z
 
+    :cond_18
+    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMoveInProgress:Z
+
+    if-nez v0, :cond_0
+
+    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->initPrivacyGuardButton()V
+
     goto/16 :goto_0
 
     .line 877
-    :cond_18
-    if-ne v6, v11, :cond_19
+    :cond_19
+    if-ne v6, v11, :cond_1a
 
     .line 878
     const v0, 0x7f0b04fb
@@ -3191,7 +3198,7 @@
     goto :goto_d
 
     .line 881
-    :cond_19
+    :cond_1a
     add-int/lit8 v0, v6, -0x2
 
     invoke-virtual {v5, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3212,10 +3219,10 @@
     move v1, v0
 
     :goto_e
-    if-ltz v1, :cond_1b
+    if-ltz v1, :cond_1c
 
     .line 883
-    if-nez v1, :cond_1a
+    if-nez v1, :cond_1b
 
     const v0, 0x7f0b04fd
 
@@ -3242,13 +3249,13 @@
     goto :goto_e
 
     .line 883
-    :cond_1a
+    :cond_1b
     const v0, 0x7f0b04fe
 
     goto :goto_f
 
     .line 886
-    :cond_1b
+    :cond_1c
     const v0, 0x7f0b04fc
 
     new-array v1, v11, [Ljava/lang/Object;
@@ -3272,7 +3279,7 @@
     goto/16 :goto_d
 
     .line 910
-    :cond_1c
+    :cond_1d
     :try_start_2
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -3297,7 +3304,7 @@
     .line 913
     iget-boolean v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mShowUninstalled:Z
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_18
 
     .line 917
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->flags:I

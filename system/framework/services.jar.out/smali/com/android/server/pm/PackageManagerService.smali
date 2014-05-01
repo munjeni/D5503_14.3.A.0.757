@@ -249,6 +249,8 @@
 
 .field private mAppLibInstallDir:Ljava/io/File;
 
+.field private mAppOps:Landroid/app/AppOpsManager;
+
 .field final mAsecInternalPath:Ljava/lang/String;
 
 .field final mAvailableFeatures:Ljava/util/HashMap;
@@ -1094,6 +1096,20 @@
     const v5, 0x40000001
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/android/server/pm/Settings;->addSharedUserLPw(Ljava/lang/String;II)Lcom/android/server/pm/SharedUserSetting;
+
+    const-string v2, "appops"
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/app/AppOpsManager;
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/android/server/pm/PackageManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
     .line 1168
     move-object/from16 v0, p0

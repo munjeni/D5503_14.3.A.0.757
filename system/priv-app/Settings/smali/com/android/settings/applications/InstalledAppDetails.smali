@@ -3066,7 +3066,7 @@
     move-result-object v7
 
     .line 875
-    if-ne v6, v4, :cond_18
+    if-ne v6, v4, :cond_19
 
     .line 876
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3136,7 +3136,7 @@
     .line 902
     iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mInitialized:Z
 
-    if-nez v0, :cond_1c
+    if-nez v0, :cond_1d
 
     .line 904
     iput-boolean v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mInitialized:Z
@@ -4120,7 +4120,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mNotificationSwitch:Landroid/widget/CompoundButton;
 
-    if-ne p1, v0, :cond_0
+    if-ne p1, v0, :cond_5
 
     .line 1448
     if-nez p2, :cond_4

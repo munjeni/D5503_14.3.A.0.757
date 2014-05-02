@@ -1,11 +1,11 @@
-.class public final Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+.class public final Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
 .super Ljava/lang/Object;
 .source "PrivacyGuardManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/privacyguard/PrivacyGuardManager;
+    value = Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

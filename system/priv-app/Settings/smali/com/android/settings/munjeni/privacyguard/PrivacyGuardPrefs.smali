@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacyguard/PrivacyGuardPrefs;
+.class public Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;
 .super Lcom/android/settings/SettingsPreferenceFragment;
 .source "PrivacyGuardPrefs.java"
 
@@ -38,10 +38,10 @@
     .line 50
     const v1, 0x7f050061
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->addPreferencesFromResource(I)V
 
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -49,23 +49,23 @@
     .local v0, "prefSet":Landroid/preference/PreferenceScreen;
     const-string v1, "privacy_guard_default"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
 
     .line 54
-    iget-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 56
-    iget-object v4, p0, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -147,7 +147,7 @@
     const/4 v1, 0x0
 
     .line 74
-    iget-object v3, p0, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->mPrivacyGuardDefault:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v3, :cond_1
 
@@ -161,7 +161,7 @@
 
     .line 76
     .local v0, "value":Z
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardPrefs;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardPrefs;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 

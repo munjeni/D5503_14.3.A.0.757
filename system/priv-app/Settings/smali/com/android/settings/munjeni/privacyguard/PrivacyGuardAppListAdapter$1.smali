@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter$1;
+.class synthetic Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter$1;
 .super Ljava/lang/Object;
 .source "PrivacyGuardAppListAdapter.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    value = Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

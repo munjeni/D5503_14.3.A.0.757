@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacyguard/PrivacyGuardManager;
+.class public Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 .super Landroid/app/Fragment;
 .source "PrivacyGuardManager.java"
 
@@ -10,9 +10,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment;,
-        Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;,
-        Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+        Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$ResetDialogFragment;,
+        Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;,
+        Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 # instance fields
 .field private mActivity:Landroid/app/Activity;
 
-.field private mAdapter:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+.field private mAdapter:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
 .field private mAppOps:Landroid/app/AppOpsManager;
 
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;",
+            "Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;",
             ">;"
         }
     .end annotation
@@ -59,57 +59,57 @@
     .line 80
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iput v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     .line 358
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/privacyguard/PrivacyGuardManager;)Landroid/content/SharedPreferences;
+.method static synthetic access$000(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/privacyguard/PrivacyGuardManager;
+    .param p0, "x0"    # Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/privacyguard/PrivacyGuardManager;)Ljava/util/List;
+.method static synthetic access$200(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;)Ljava/util/List;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/privacyguard/PrivacyGuardManager;
+    .param p0, "x0"    # Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/privacyguard/PrivacyGuardManager;)Landroid/app/AppOpsManager;
+.method static synthetic access$300(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;)Landroid/app/AppOpsManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/privacyguard/PrivacyGuardManager;
+    .param p0, "x0"    # Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/privacyguard/PrivacyGuardManager;)Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+.method static synthetic access$400(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;)Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/privacyguard/PrivacyGuardManager;
+    .param p0, "x0"    # Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
     return-object v0
 .end method
 
-.method private createAdapter()Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+.method private createAdapter()Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
     .locals 11
 
     .prologue
@@ -130,7 +130,7 @@
 
     .line 209
     .local v5, "positions":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Integer;>;"
-    iget-object v8, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v8, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->size()I
 
@@ -148,17 +148,17 @@
     if-ge v2, v1, :cond_4
 
     .line 212
-    iget-object v8, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v8, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     invoke-interface {v8, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    check-cast v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
 
     .line 215
-    .local v0, "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
-    iget-boolean v8, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->enabled:Z
+    .local v0, "app":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
+    iget-boolean v8, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->enabled:Z
 
     if-nez v8, :cond_2
 
@@ -206,7 +206,7 @@
     .line 217
     .end local v6    # "sectionIndex":Ljava/lang/String;
     :cond_2
-    iget-object v8, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
 
     invoke-virtual {v8}, Ljava/lang/String;->isEmpty()Z
 
@@ -223,7 +223,7 @@
     .line 220
     .end local v6    # "sectionIndex":Ljava/lang/String;
     :cond_3
-    iget-object v8, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -241,16 +241,16 @@
     goto :goto_1
 
     .line 234
-    .end local v0    # "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    .end local v0    # "app":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
     .end local v6    # "sectionIndex":Ljava/lang/String;
     :cond_4
-    new-instance v8, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    new-instance v8, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
-    iget-object v9, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v9, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
-    iget-object v10, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v10, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
-    invoke-direct {v8, v9, v10, v7, v5}, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;-><init>(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {v8, v9, v10, v7, v5}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;-><init>(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-object v8
 .end method
@@ -264,18 +264,18 @@
     const/4 v2, 0x0
 
     .line 187
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->loadInstalledApps()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->loadInstalledApps()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -285,24 +285,24 @@
 
     .line 192
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
 
     const v1, 0x7f0b09d6
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     const/4 v1, 0x0
 
@@ -314,31 +314,31 @@
 
     .line 197
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 199
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->createAdapter()Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->createAdapter()Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    iget-object v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     const/4 v1, 0x1
 
@@ -354,7 +354,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;",
+            "Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;",
             ">;"
         }
     .end annotation
@@ -368,8 +368,8 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 277
-    .local v2, "apps":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;>;"
-    iget-object v10, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
+    .local v2, "apps":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;>;"
+    iget-object v10, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
 
     const/16 v11, 0x1040
 
@@ -379,14 +379,14 @@
 
     .line 279
     .local v6, "packages":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/PackageInfo;>;"
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->shouldShowSystemApps()Z
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->shouldShowSystemApps()Z
 
     move-result v8
 
     .line 283
     .local v8, "showSystemApps":Z
     :try_start_0
-    iget-object v10, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
+    iget-object v10, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
 
     const-string v11, "android"
 
@@ -463,13 +463,13 @@
 
     .line 304
     :cond_2
-    new-instance v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    new-instance v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
 
-    invoke-direct {v0}, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;-><init>()V
 
     .line 305
-    .local v0, "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
-    iget-object v10, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
+    .local v0, "app":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
+    iget-object v10, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v10}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -479,37 +479,37 @@
 
     move-result-object v10
 
-    iput-object v10, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
+    iput-object v10, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->title:Ljava/lang/String;
 
     .line 306
     iget-object v10, v5, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    iput-object v10, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
+    iput-object v10, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
 
     .line 307
     iget-boolean v10, v1, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
-    iput-boolean v10, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->enabled:Z
+    iput-boolean v10, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->enabled:Z
 
     .line 308
     iget-object v10, v5, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v10, v10, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iput v10, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
+    iput v10, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
 
     .line 309
-    iget-object v10, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v10, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
 
-    iget v11, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
+    iget v11, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
 
-    iget-object v12, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
+    iget-object v12, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v12}, Landroid/app/AppOpsManager;->getPrivacyGuardSettingForPackage(ILjava/lang/String;)Z
 
     move-result v10
 
-    iput-boolean v10, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
+    iput-boolean v10, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
 
     .line 311
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -517,7 +517,7 @@
     goto :goto_1
 
     .line 285
-    .end local v0    # "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    .end local v0    # "app":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
     .end local v1    # "appInfo":Landroid/content/pm/ApplicationInfo;
     .end local v4    # "i$":Ljava/util/Iterator;
     .end local v5    # "info":Landroid/content/pm/PackageInfo;
@@ -536,9 +536,9 @@
     .end local v3    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .restart local v4    # "i$":Ljava/util/Iterator;
     :cond_3
-    new-instance v10, Lcom/android/settings/privacyguard/PrivacyGuardManager$1;
+    new-instance v10, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$1;
 
-    invoke-direct {v10, p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager$1;-><init>(Lcom/android/settings/privacyguard/PrivacyGuardManager;)V
+    invoke-direct {v10, p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$1;-><init>(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;)V
 
     invoke-static {v2, v10}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -551,11 +551,11 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mApps:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -570,7 +570,7 @@
 
     .line 241
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->showResetDialog()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->showResetDialog()V
 
     goto :goto_0
 .end method
@@ -580,7 +580,7 @@
 
     .prologue
     .line 329
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
 
     const-string v1, "show_system_apps"
 
@@ -598,21 +598,21 @@
 
     .prologue
     .line 354
-    new-instance v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;
+    new-instance v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;-><init>(Lcom/android/settings/privacyguard/PrivacyGuardManager;Lcom/android/settings/privacyguard/PrivacyGuardManager$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;-><init>(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$1;)V
 
     .line 355
-    .local v0, "fragment":Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
+    .local v0, "fragment":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "help_dialog"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 356
     return-void
@@ -623,21 +623,21 @@
 
     .prologue
     .line 386
-    new-instance v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment;
+    new-instance v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$ResetDialogFragment;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment;-><init>(Lcom/android/settings/privacyguard/PrivacyGuardManager;Lcom/android/settings/privacyguard/PrivacyGuardManager$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$ResetDialogFragment;-><init>(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$1;)V
 
     .line 387
-    .local v0, "dialog":Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment;
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
+    .local v0, "dialog":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$ResetDialogFragment;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "reset_dialog"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/privacyguard/PrivacyGuardManager$ResetDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$ResetDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 388
     return-void
@@ -658,7 +658,7 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     const v1, 0x7f080038
 
@@ -668,10 +668,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mNoUserAppsInstalled:Landroid/widget/TextView;
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     const v1, 0x7f08025c
 
@@ -681,20 +681,20 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     const-string v1, "privacy_guard_manager"
 
@@ -702,10 +702,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
 
     const-string v1, "first_help_shown"
 
@@ -716,7 +716,7 @@
     if-nez v0, :cond_0
 
     .line 130
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->showHelp()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->showHelp()V
 
     .line 133
     :cond_0
@@ -729,7 +729,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iput v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     .line 136
     const-string v0, "last_list_offset"
@@ -738,26 +738,26 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
+    iput v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
 
     .line 143
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->loadApps()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->loadApps()V
 
     .line 145
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->setHasOptionsMenu(Z)V
 
     .line 146
     return-void
 
     .line 138
     :cond_1
-    iput v3, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iput v3, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     .line 139
-    iput v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
+    iput v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
 
     goto :goto_0
 .end method
@@ -783,7 +783,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->shouldShowSystemApps()Z
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->shouldShowSystemApps()Z
 
     move-result v1
 
@@ -801,23 +801,23 @@
 
     .prologue
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPm:Landroid/content/pm/PackageManager;
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -829,7 +829,7 @@
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
 
     .line 104
     const v0, 0x7f0400ba
@@ -851,7 +851,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onDestroyView()V
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -911,34 +911,34 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    check-cast v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
 
     .line 249
-    .local v0, "app":Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
-    iget-boolean v1, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
+    .local v0, "app":Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
+    iget-boolean v1, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
 
     if-nez v1, :cond_0
 
     const/4 v1, 0x1
 
     :goto_0
-    iput-boolean v1, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
+    iput-boolean v1, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
 
     .line 250
-    iget-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppOps:Landroid/app/AppOpsManager;
 
-    iget v2, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
+    iget v2, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->uid:I
 
-    iget-object v3, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
 
-    iget-boolean v4, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
+    iget-boolean v4, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->privacyGuardEnabled:Z
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/app/AppOpsManager;->setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
 
     .line 252
-    iget-object v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;
+    iget-object v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAdapter:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/privacyguard/PrivacyGuardAppListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v1}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardAppListAdapter;->notifyDataSetChanged()V
 
     .line 253
     return-void
@@ -968,7 +968,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;
+    check-cast v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;
 
     .line 260
     new-instance v2, Landroid/os/Bundle;
@@ -978,12 +978,12 @@
     .line 261
     const-string v1, "package"
 
-    iget-object v0, v0, Lcom/android/settings/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$AppInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 263
-    invoke-virtual {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1035,13 +1035,13 @@
 
     .line 401
     :sswitch_0
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->showHelp()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->showHelp()V
 
     goto :goto_0
 
     .line 404
     :sswitch_1
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->resetPrivacyGuard()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->resetPrivacyGuard()V
 
     goto :goto_0
 
@@ -1062,7 +1062,7 @@
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
 
     .line 411
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -1081,7 +1081,7 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 412
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->loadApps()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->loadApps()V
 
     goto :goto_0
 
@@ -1100,14 +1100,14 @@
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 416
-    iget-object v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     const-class v3, Lcom/android/settings/Settings$AppOpsSummaryActivity;
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 417
-    iget-object v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v2, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
@@ -1133,16 +1133,16 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 168
-    iget-object v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v2}, Landroid/widget/ListView;->getFirstVisiblePosition()I
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iput v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     .line 169
-    iget-object v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
@@ -1153,7 +1153,7 @@
     if-nez v0, :cond_0
 
     :goto_0
-    iput v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
+    iput v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
 
     .line 171
     return-void
@@ -1177,24 +1177,24 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 178
-    invoke-direct {p0}, Lcom/android/settings/privacyguard/PrivacyGuardManager;->loadApps()V
+    invoke-direct {p0}, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->loadApps()V
 
     .line 180
-    iget v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iget v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     if-eq v0, v3, :cond_0
 
     .line 181
-    iget-object v0, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mAppsList:Landroid/widget/ListView;
 
-    iget v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iget v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
-    iget v2, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
+    iget v2, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
     .line 182
-    iput v3, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iput v3, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     .line 184
     :cond_0
@@ -1212,14 +1212,14 @@
     .line 157
     const-string v0, "last_list_pos"
 
-    iget v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
+    iget v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstVisiblePosition:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 158
     const-string v0, "last_list_offset"
 
-    iget v1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
+    iget v1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager;->mSavedFirstItemOffset:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

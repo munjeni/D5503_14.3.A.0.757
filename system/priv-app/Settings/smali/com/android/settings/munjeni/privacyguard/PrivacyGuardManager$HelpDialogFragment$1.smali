@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment$1;
+.class Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment$1;
 .super Ljava/lang/Object;
 .source "PrivacyGuardManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;
+.field final synthetic this$1:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;)V
+.method constructor <init>(Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;)V
     .locals 0
 
     .prologue
     .line 338
-    iput-object p1, p0, Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment$1;->this$1:Lcom/android/settings/privacyguard/PrivacyGuardManager$HelpDialogFragment;
+    iput-object p1, p0, Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment$1;->this$1:Lcom/android/settings/munjeni/privacyguard/PrivacyGuardManager$HelpDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

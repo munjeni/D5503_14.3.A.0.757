@@ -1081,6 +1081,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".munjeni.PrivacySettings"/>
+        <activity android:name=".munjeni.notificationlight.NotificationLightSettings" />
         <receiver android:enabled="@bool/has_powercontrol_widget" android:exported="false" android:label="@string/gadget_title" android:name=".widget.SettingsAppWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>

@@ -303,6 +303,7 @@
     <public type="drawable" name="ic_settings_cpustats" id="0x7f0200ff" />
     <public type="drawable" name="ic_privacy_guard" id="0x7f020100" />
     <public type="drawable" name="ic_privacy_guard_off" id="0x7f020101" />
+    <public type="drawable" name="ic_custom_led" id="0x7f020102" />
     <public type="mipmap" name="ic_launcher_settings" id="0x7f030000" />
     <public type="layout" name="account_preference" id="0x7f040001" />
     <public type="layout" name="account_sync_screen" id="0x7f040002" />
@@ -492,6 +493,9 @@
     <public type="layout" name="wifi_settings_for_setup_wizard_xl" id="0x7f0400b6" />
     <public type="layout" name="privacy_guard_manager" id="0x7f0400ba" />
     <public type="layout" name="privacy_guard_manager_list_row" id="0x7f0400bb" />
+    <public type="layout" name="pulse_time_item" id="0x7f0400bc" />
+    <public type="layout" name="preference_application_light" id="0x7f0400bd" />
+    <public type="layout" name="dialog_light_settings" id="0x7f0400be" />
     <public type="xml" name="accessibility_settings" id="0x7f050000" />
     <public type="xml" name="account_sync_settings" id="0x7f050001" />
     <public type="xml" name="add_account_settings" id="0x7f050002" />
@@ -591,6 +595,7 @@
     <public type="xml" name="xperia_connectivity_settings" id="0x7f050060" />
     <public type="xml" name="privacy_guard_prefs" id="0x7f050061" />
     <public type="xml" name="privacy_settings_munjeni" id="0x7f050062" />
+    <public type="xml" name="notification_light_settings" id="0x7f050063" />
     <public type="raw" name="media_volume" id="0x7f060000" />
     <public type="raw" name="tethering_help" id="0x7f060001" />
     <public type="raw" name="tethering_usb_help" id="0x7f060002" />
@@ -726,6 +731,10 @@
     <public type="array" name="app_ops_labels_cm" id="0x7f070080" />
     <public type="array" name="app_ops_categories_cm" id="0x7f070081" />
     <public type="array" name="app_ops_permissions" id="0x7f070082" />
+    <public type="array" name="notification_pulse_length_entries" id="0x7f070083" />
+    <public type="array" name="notification_pulse_length_values" id="0x7f070084" />
+    <public type="array" name="notification_pulse_speed_entries" id="0x7f070085" />
+    <public type="array" name="notification_pulse_speed_values" id="0x7f070086" />
     <public type="id" name="horizontal" id="0x7f080000" />
     <public type="id" name="vertical" id="0x7f080001" />
     <public type="id" name="syncStatusIcon" id="0x7f080002" />
@@ -1340,6 +1349,20 @@
     <public type="id" name="show_user_apps" id="0x7f080263" />
     <public type="id" name="reset_counters" id="0x7f080264" />
     <public type="id" name="privacy_guard_switch" id="0x7f080265" />
+    <public type="id" name="textViewName" id="0x7f080266" />
+    <public type="id" name="light_color" id="0x7f080267" />
+    <public type="id" name="textViewTimeOffValue" id="0x7f080268" />
+    <public type="id" name="textViewTimeOnValue" id="0x7f080269" />
+    <public type="id" name="app_light_pref" id="0x7f08026a" />
+    <public type="id" name="color_picker_view" id="0x7f08026b" />
+    <public type="id" name="color_panel_view" id="0x7f08026c" />
+    <public type="id" name="old_color_panel" id="0x7f08026d" />
+    <public type="id" name="new_color_panel" id="0x7f08026e" />
+    <public type="id" name="speed_title_view" id="0x7f08026f" />
+    <public type="id" name="on_spinner" id="0x7f080270" />
+    <public type="id" name="off_spinner" id="0x7f080271" />
+    <public type="id" name="hex_color_input" id="0x7f080272" />
+    <public type="id" name="color_panel" id="0x7f080273" />
     <public type="bool" name="has_dock_settings" id="0x7f090000" />
     <public type="bool" name="has_silent_mode" id="0x7f090001" />
     <public type="bool" name="has_powercontrol_widget" id="0x7f090002" />
@@ -4047,6 +4070,38 @@
     <public type="string" name="app_ops_reset_counters" id="0x7f0b0a4a" />
     <public type="string" name="app_ops_reset_confirm_title" id="0x7f0b0a4b" />
     <public type="string" name="app_ops_reset_confirm_mesg" id="0x7f0b0a4c" />
+    <public type="string" name="notification_light_general_title" id="0x7f0b0a4d" />
+    <public type="string" name="notification_light_default_value" id="0x7f0b0a4e" />
+    <public type="string" name="notification_light_use_custom" id="0x7f0b0a4f" />
+    <public type="string" name="notification_light_phonelist_title" id="0x7f0b0a50" />
+    <public type="string" name="notification_light_missed_call_title" id="0x7f0b0a51" />
+    <public type="string" name="notification_light_voicemail_title" id="0x7f0b0a52" />
+    <public type="string" name="notification_light_applist_title" id="0x7f0b0a53" />
+    <public type="string" name="notification_light_enabled" id="0x7f0b0a54" />
+    <public type="string" name="notification_light_disabled" id="0x7f0b0a55" />
+    <public type="string" name="profiles_add" id="0x7f0b0a56" />
+    <public type="string" name="dialog_delete_title" id="0x7f0b0a57" />
+    <public type="string" name="dialog_delete_message" id="0x7f0b0a58" />
+    <public type="string" name="profile_choose_app" id="0x7f0b0a59" />
+    <public type="string" name="custom_time" id="0x7f0b0a5a" />
+    <public type="string" name="dialog_test" id="0x7f0b0a5b" />
+    <public type="string" name="default_time" id="0x7f0b0a5c" />
+    <public type="string" name="pulse_length_always_on" id="0x7f0b0a5d" />
+    <public type="string" name="pulse_length_very_short" id="0x7f0b0a5e" />
+    <public type="string" name="pulse_length_short" id="0x7f0b0a5f" />
+    <public type="string" name="pulse_length_normal" id="0x7f0b0a60" />
+    <public type="string" name="pulse_length_long" id="0x7f0b0a61" />
+    <public type="string" name="pulse_length_very_long" id="0x7f0b0a62" />
+    <public type="string" name="pulse_speed_very_fast" id="0x7f0b0a63" />
+    <public type="string" name="pulse_speed_fast" id="0x7f0b0a64" />
+    <public type="string" name="pulse_speed_normal" id="0x7f0b0a65" />
+    <public type="string" name="pulse_speed_slow" id="0x7f0b0a66" />
+    <public type="string" name="dialog_test_message" id="0x7f0b0a67" />
+    <public type="string" name="dialog_test_button" id="0x7f0b0a68" />
+    <public type="string" name="edit_light_settings" id="0x7f0b0a69" />
+    <public type="string" name="pulse_speed_title" id="0x7f0b0a6a" />
+    <public type="string" name="picker_arrow" id="0x7f0b0a6b" />
+    <public type="string" name="pulse_speed_very_slow" id="0x7f0b0a6c" />
     <public type="integer" name="maximum_user_dictionary_word_length" id="0x7f0c0000" />
     <public type="integer" name="keyguard_appwidget_picker_cols" id="0x7f0c0001" />
     <public type="integer" name="preference_scrollbar_style" id="0x7f0c0002" />

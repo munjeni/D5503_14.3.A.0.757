@@ -19,6 +19,7 @@
     </header>
     <header android:icon="@drawable/ic_settings_sound" android:id="@id/sound_settings" android:title="@string/sound_settings" android:fragment="com.android.settings.SoundSettings" />
     <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.android.settings.DisplaySettings" />
+    <header android:icon="@drawable/ic_custom_led" android:title="@string/notification_pulse_title" android:fragment="com.android.settings.munjeni.notificationlight.NotificationLightSettings" />
     <header android:icon="@drawable/ic_settings_storage" android:id="@id/storage_settings" android:title="@string/storage_settings" android:fragment="com.android.settings.deviceinfo.Memory" />
     <header android:icon="@drawable/ic_settings_battery" android:id="@id/power_settings" android:title="@string/power_settings_title" android:fragment="com.sonymobile.settings.stamina.StaminaSettings" />
     <header android:icon="@drawable/ic_settings_cpucontrol" android:title="@string/cpu_control">

@@ -196,7 +196,7 @@
     .line 130
     iget-object v2, p0, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f040041
+    const v4, 0x7f0400be
 
     const/4 v5, 0x0
 
@@ -206,7 +206,7 @@
 
     .line 132
     .local v0, "layout":Landroid/view/View;
-    const v2, 0x7f0d00c5
+    const v2, 0x7f08026b
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -217,7 +217,7 @@
     iput-object v2, p0, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog;->mColorPicker:Lcom/android/settings/munjeni/notificationlight/ColorPickerView;
 
     .line 133
-    const v2, 0x7f0d00c7
+    const v2, 0x7f080272
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
     iput-object v2, p0, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog;->mHexColorInput:Landroid/widget/EditText;
 
     .line 134
-    const v2, 0x7f0d00c8
+    const v2, 0x7f080273
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -254,7 +254,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 140
-    const v2, 0x7f0d00ca
+    const v2, 0x7f080270
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -267,9 +267,9 @@
     .line 141
     new-instance v1, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
 
-    const v2, 0x7f0c0081
+    const v2, 0x7f070083
 
-    const v4, 0x7f0c0082
+    const v4, 0x7f070084
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -304,7 +304,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 149
-    const v2, 0x7f0d00cb
+    const v2, 0x7f080271
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -318,9 +318,9 @@
     new-instance v1, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
 
     .end local v1    # "pulseSpeedAdapter":Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
-    const v2, 0x7f0c0083
+    const v2, 0x7f070085
 
-    const v4, 0x7f0c0084
+    const v4, 0x7f070086
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -375,7 +375,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog;->setView(Landroid/view/View;)V
 
     .line 161
-    const v2, 0x7f080125
+    const v2, 0x7f0b0a69
 
     invoke-virtual {p0, v2}, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog;->setTitle(I)V
 

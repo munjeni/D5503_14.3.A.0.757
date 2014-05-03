@@ -239,7 +239,7 @@
 
     .prologue
     .line 99
-    const v0, 0x7f040087
+    const v0, 0x7f0400bd
 
     invoke-virtual {p0, v0}, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->setLayoutResource(I)V
 
@@ -277,7 +277,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080127
+    const v4, 0x7f0b0a5c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -291,7 +291,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0c0081
+    const v4, 0x7f070083
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -301,7 +301,7 @@
     .local v1, "timeNames":[Ljava/lang/String;
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0c0082
+    const v4, 0x7f070084
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080128
+    const v4, 0x7f0b0a5a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -375,7 +375,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080127
+    const v4, 0x7f0b0a5c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -389,7 +389,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0c0083
+    const v4, 0x7f070085
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -399,7 +399,7 @@
     .local v1, "timeNames":[Ljava/lang/String;
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0c0084
+    const v4, 0x7f070086
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -445,7 +445,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080128
+    const v4, 0x7f0b0a5a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -463,7 +463,7 @@
     .line 134
     iget-object v2, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f070012
+    const v3, 0x7f0d0000
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -475,7 +475,7 @@
     .local v1, "width":I
     iget-object v2, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f070013
+    const v3, 0x7f0d0001
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -617,7 +617,7 @@
 
     iget-object v2, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f0801d3
+    const v3, 0x7f0b09e1
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -634,7 +634,7 @@
 
     iget-object v2, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f0804cc
+    const v3, 0x7f0b018a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -689,7 +689,7 @@
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onBindView(Landroid/view/View;)V
 
     .line 121
-    const v1, 0x7f0d0161
+    const v1, 0x7f080267
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -700,7 +700,7 @@
     iput-object v1, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mLightColorView:Landroid/widget/ImageView;
 
     .line 122
-    const v1, 0x7f0d015f
+    const v1, 0x7f080269
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -711,7 +711,7 @@
     iput-object v1, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mOnValueView:Landroid/widget/TextView;
 
     .line 123
-    const v1, 0x7f0d0160
+    const v1, 0x7f080268
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

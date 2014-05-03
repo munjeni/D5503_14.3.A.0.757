@@ -612,4 +612,18 @@
     <item type="id" name="show_user_apps">false</item>
     <item type="id" name="reset_counters">false</item>
     <item type="id" name="privacy_guard_switch">false</item>
+    <item type="id" name="textViewName">false</item>
+    <item type="id" name="light_color">false</item>
+    <item type="id" name="textViewTimeOffValue">false</item>
+    <item type="id" name="textViewTimeOnValue">false</item>
+    <item type="id" name="app_light_pref">false</item>
+    <item type="id" name="color_picker_view">false</item>
+    <item type="id" name="color_panel_view">false</item>
+    <item type="id" name="old_color_panel">false</item>
+    <item type="id" name="new_color_panel">false</item>
+    <item type="id" name="speed_title_view">false</item>
+    <item type="id" name="on_spinner">false</item>
+    <item type="id" name="off_spinner">false</item>
+    <item type="id" name="hex_color_input">false</item>
+    <item type="id" name="color_panel">false</item>
 </resources>

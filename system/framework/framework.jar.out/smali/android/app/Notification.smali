@@ -79,6 +79,8 @@
 
 .field public static final FLAG_AUTO_CANCEL:I = 0x10
 
+.field public static final FLAG_FORCE_LED_SCREEN_OFF:I = 0x100
+
 .field public static final FLAG_FOREGROUND_SERVICE:I = 0x40
 
 .field public static final FLAG_HIGH_PRIORITY:I = 0x80

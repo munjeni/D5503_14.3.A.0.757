@@ -250,7 +250,7 @@
 
     .line 237
     .local v1, "pd":Landroid/app/ProgressDialog;
-    sget-boolean v2, Lcom/android/server/pm/ShutdownThread;->mReboot:Z
+    sget-boolean v2, Lcom/android/server/power/ShutdownThread;->mReboot:Z
 
     if-eqz v2, :cond_2
 

@@ -4931,6 +4931,8 @@
     <public type="string" name="global_action_reboot_bootloader" id="0x010407e5" />
     <public type="string" name="global_action_reboot_flashmode" id="0x010407e6" />
     <public type="string" name="global_action_reboot_emergency_download" id="0x010407e7" />
+    <public type="string" name="reboot_system" id="0x010407e8" />
+    <public type="string" name="reboot_progress" id="0x010407e9" />
     <public type="dimen" name="app_icon_size" id="0x01050000" />
     <public type="dimen" name="thumbnail_height" id="0x01050001" />
     <public type="dimen" name="thumbnail_width" id="0x01050002" />

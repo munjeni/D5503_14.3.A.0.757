@@ -1872,4 +1872,6 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="global_action_reboot_bootloader">Fastboot</string>
     <string name="global_action_reboot_flashmode">Flashmode</string>
     <string name="global_action_reboot_emergency_download">Emergency Download</string>
+    <string name="reboot_system">Reboot phone</string>
+    <string name="reboot_progress">Rebooting…</string>
 </resources>

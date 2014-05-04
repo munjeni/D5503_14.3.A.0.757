@@ -2789,4 +2789,5 @@ By default built-in apps are not shown. If you want to show them, select the res
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="picker_arrow">→</string>
     <string name="pulse_speed_very_slow">Very slow</string>
+    <string name="profile_reset_title">Reset</string>
 </resources>

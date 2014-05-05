@@ -41,6 +41,8 @@
 
 .field public static final EXTRA_AS_HEADS_UP:Ljava/lang/String; = "headsup"
 
+.field public static final EXTRA_FORCE_SHOW_LIGHTS:Ljava/lang/String; = "android.forceShowLights"
+
 .field public static final EXTRA_INFO_TEXT:Ljava/lang/String; = "android.infoText"
 
 .field public static final EXTRA_LARGE_ICON:Ljava/lang/String; = "android.largeIcon"

@@ -4104,6 +4104,7 @@
     <public type="string" name="picker_arrow" id="0x7f0b0a6b" />
     <public type="string" name="pulse_speed_very_slow" id="0x7f0b0a6c" />
     <public type="string" name="profile_reset_title" id="0x7f0b0a6d" />
+    <public type="string" name="lights_category_title" id="0x7f0b0a6e" />
     <public type="integer" name="maximum_user_dictionary_word_length" id="0x7f0c0000" />
     <public type="integer" name="keyguard_appwidget_picker_cols" id="0x7f0c0001" />
     <public type="integer" name="preference_scrollbar_style" id="0x7f0c0002" />

@@ -876,6 +876,7 @@ Security: %2$s"</string>
     <string name="ring_volume_title">Ringer volume</string>
     <string name="vibrate_in_silent_title">Vibrate when silent</string>
     <string name="notification_sound_title">Notification sound</string>
+    <string name="lights_category_title">Lights</string>
     <string name="notification_pulse_title">Notification light</string>
     <string name="incoming_call_volume_title">Ringtone</string>
     <string name="notification_volume_title">Notification</string>

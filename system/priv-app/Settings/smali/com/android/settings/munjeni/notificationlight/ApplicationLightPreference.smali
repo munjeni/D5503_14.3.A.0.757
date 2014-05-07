@@ -850,7 +850,7 @@
 
     .prologue
     .line 156
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialogNew(Landroid/os/Bundle;)V
 
     .line 158
     invoke-virtual {p0}, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->getDialog()Landroid/app/Dialog;

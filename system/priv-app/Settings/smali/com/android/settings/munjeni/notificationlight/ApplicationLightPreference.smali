@@ -291,7 +291,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f070083
+    const v4, 0x7f070080
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -301,7 +301,7 @@
     .local v1, "timeNames":[Ljava/lang/String;
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f070084
+    const v4, 0x7f070081
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -389,7 +389,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f070085
+    const v4, 0x7f070082
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -399,7 +399,7 @@
     .local v1, "timeNames":[Ljava/lang/String;
     iget-object v3, p0, Lcom/android/settings/munjeni/notificationlight/ApplicationLightPreference;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f070086
+    const v4, 0x7f070083
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

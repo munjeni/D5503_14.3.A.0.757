@@ -728,14 +728,11 @@
     <public type="array" name="styled_font_entries" id="0x7f07007c" />
     <public type="array" name="vpn_proxy_settings" id="0x7f07007d" />
     <public type="array" name="wifi_status_with_sip_ppp" id="0x7f07007e" />
-    <public type="array" name="app_ops_summaries_cm" id="0x7f07007f" />
-    <public type="array" name="app_ops_labels_cm" id="0x7f070080" />
-    <public type="array" name="app_ops_categories_cm" id="0x7f070081" />
-    <public type="array" name="app_ops_permissions" id="0x7f070082" />
-    <public type="array" name="notification_pulse_length_entries" id="0x7f070083" />
-    <public type="array" name="notification_pulse_length_values" id="0x7f070084" />
-    <public type="array" name="notification_pulse_speed_entries" id="0x7f070085" />
-    <public type="array" name="notification_pulse_speed_values" id="0x7f070086" />
+    <public type="array" name="app_ops_permissions" id="0x7f07007f" />
+    <public type="array" name="notification_pulse_length_entries" id="0x7f070080" />
+    <public type="array" name="notification_pulse_length_values" id="0x7f070081" />
+    <public type="array" name="notification_pulse_speed_entries" id="0x7f070082" />
+    <public type="array" name="notification_pulse_speed_values" id="0x7f070083" />
     <public type="id" name="horizontal" id="0x7f080000" />
     <public type="id" name="vertical" id="0x7f080001" />
     <public type="id" name="syncStatusIcon" id="0x7f080002" />

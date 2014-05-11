@@ -267,9 +267,9 @@
     .line 141
     new-instance v1, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
 
-    const v2, 0x7f070083
+    const v2, 0x7f070080
 
-    const v4, 0x7f070084
+    const v4, 0x7f070081
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -318,9 +318,9 @@
     new-instance v1, Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
 
     .end local v1    # "pulseSpeedAdapter":Lcom/android/settings/munjeni/notificationlight/LightSettingsDialog$PulseSpeedAdapter;
-    const v2, 0x7f070085
+    const v2, 0x7f070082
 
-    const v4, 0x7f070086
+    const v4, 0x7f070083
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -53,48 +53,48 @@
     .param p4, "switchOrder"    # I
 
     .prologue
-    .line 332
+    .line 331
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 324
+    .line 323
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
-    .line 326
+    .line 325
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
-    .line 333
+    .line 332
     iput-object p1, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mPkgOps:Landroid/app/AppOpsManager$PackageOps;
 
-    .line 334
+    .line 333
     iput-object p3, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
-    .line 335
+    .line 334
     iput p4, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOrder:I
 
-    .line 336
+    .line 335
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
     invoke-virtual {v0, p0, p2}, Lcom/android/settings/applications/AppOpsState$AppEntry;->addOp(Lcom/android/settings/applications/AppOpsState$AppOpEntry;Landroid/app/AppOpsManager$OpEntry;)V
 
-    .line 337
+    .line 336
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 338
+    .line 337
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 339
+    .line 338
     return-void
 .end method
 
@@ -114,7 +114,7 @@
     .end annotation
 
     .prologue
-    .line 342
+    .line 341
     .local p0, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/AppOpsManager$OpEntry;>;"
     const/4 v0, 0x0
 
@@ -126,14 +126,14 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 343
+    .line 342
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/app/AppOpsManager$OpEntry;
 
-    .line 344
+    .line 343
     .local v1, "pos":Landroid/app/AppOpsManager$OpEntry;
     invoke-virtual {v1}, Landroid/app/AppOpsManager$OpEntry;->isRunning()Z
 
@@ -145,22 +145,22 @@
 
     if-eq v2, v3, :cond_0
 
-    .line 345
+    .line 344
     invoke-virtual {p1}, Landroid/app/AppOpsManager$OpEntry;->isRunning()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 346
+    .line 345
     invoke-virtual {p0, v0, p1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 357
+    .line 356
     .end local v1    # "pos":Landroid/app/AppOpsManager$OpEntry;
     :goto_1
     return-void
 
-    .line 351
+    .line 350
     .restart local v1    # "pos":Landroid/app/AppOpsManager$OpEntry;
     :cond_0
     invoke-virtual {v1}, Landroid/app/AppOpsManager$OpEntry;->getTime()J
@@ -175,18 +175,18 @@
 
     if-gez v2, :cond_1
 
-    .line 352
+    .line 351
     invoke-virtual {p0, v0, p1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     goto :goto_1
 
-    .line 342
+    .line 341
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 356
+    .line 355
     .end local v1    # "pos":Landroid/app/AppOpsManager$OpEntry;
     :cond_2
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -219,12 +219,12 @@
 
     const/4 v8, 0x0
 
-    .line 389
+    .line 388
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 390
+    .line 389
     .local v0, "builder":Ljava/lang/StringBuilder;
     const/4 v2, 0x0
 
@@ -236,15 +236,15 @@
 
     if-ge v2, v5, :cond_2
 
-    .line 391
+    .line 390
     if-lez v2, :cond_0
 
-    .line 392
+    .line 391
     const-string v5, ", "
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 394
+    .line 393
     :cond_0
     invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -252,7 +252,7 @@
 
     check-cast v3, Landroid/app/AppOpsManager$OpEntry;
 
-    .line 395
+    .line 394
     .local v3, "op":Landroid/app/AppOpsManager$OpEntry;
     invoke-virtual {v3}, Landroid/app/AppOpsManager$OpEntry;->getAllowedCount()I
 
@@ -264,13 +264,13 @@
 
     add-int v1, v5, v6
 
-    .line 397
+    .line 396
     .local v1, "count":I
     if-eqz p4, :cond_1
 
     if-lez v1, :cond_1
 
-    .line 398
+    .line 397
     const v5, 0x7f0e000d
 
     new-array v6, v9, [Ljava/lang/Object;
@@ -285,7 +285,7 @@
 
     move-result-object v4
 
-    .line 400
+    .line 399
     .local v4, "quantity":Ljava/lang/String;
     const v5, 0x7f0b0a44
 
@@ -309,14 +309,14 @@
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 390
+    .line 389
     .end local v4    # "quantity":Ljava/lang/String;
     :goto_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 403
+    .line 402
     :cond_1
     invoke-virtual {v3}, Landroid/app/AppOpsManager$OpEntry;->getOp()I
 
@@ -328,7 +328,7 @@
 
     goto :goto_1
 
-    .line 406
+    .line 405
     .end local v1    # "count":I
     .end local v3    # "op":Landroid/app/AppOpsManager$OpEntry;
     :cond_2
@@ -346,17 +346,17 @@
     .param p1, "op"    # Landroid/app/AppOpsManager$OpEntry;
 
     .prologue
-    .line 360
+    .line 359
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
     invoke-virtual {v0, p0, p1}, Lcom/android/settings/applications/AppOpsState$AppEntry;->addOp(Lcom/android/settings/applications/AppOpsState$AppOpEntry;Landroid/app/AppOpsManager$OpEntry;)V
 
-    .line 361
+    .line 360
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     invoke-static {v0, p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->addOp(Ljava/util/ArrayList;Landroid/app/AppOpsManager$OpEntry;)V
 
-    .line 362
+    .line 361
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
     invoke-virtual {p1}, Landroid/app/AppOpsManager$OpEntry;->getOp()I
@@ -373,12 +373,12 @@
 
     if-nez v0, :cond_0
 
-    .line 363
+    .line 362
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
     invoke-static {v0, p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->addOp(Ljava/util/ArrayList;Landroid/app/AppOpsManager$OpEntry;)V
 
-    .line 365
+    .line 364
     :cond_0
     return-void
 .end method
@@ -387,7 +387,7 @@
     .locals 1
 
     .prologue
-    .line 368
+    .line 367
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
     return-object v0
@@ -404,7 +404,7 @@
 
     const/4 v7, 0x0
 
-    .line 410
+    .line 409
     iget-object v5, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -413,32 +413,32 @@
 
     check-cast v4, Landroid/app/AppOpsManager$OpEntry;
 
-    .line 411
+    .line 410
     .local v4, "op":Landroid/app/AppOpsManager$OpEntry;
     invoke-virtual {v4}, Landroid/app/AppOpsManager$OpEntry;->getAllowedCount()I
 
     move-result v0
 
-    .line 412
+    .line 411
     .local v0, "allowed":I
     invoke-virtual {v4}, Landroid/app/AppOpsManager$OpEntry;->getIgnoredCount()I
 
     move-result v2
 
-    .line 414
+    .line 413
     .local v2, "denied":I
     if-nez v0, :cond_0
 
     if-nez v2, :cond_0
 
-    .line 415
+    .line 414
     const/4 v5, 0x0
 
-    .line 428
+    .line 427
     :goto_0
     return-object v5
 
-    .line 418
+    .line 417
     :cond_0
     new-array v5, v8, [Ljava/lang/Object;
 
@@ -452,7 +452,7 @@
 
     move-result-object v1
 
-    .line 420
+    .line 419
     .local v1, "allowedQuantity":Ljava/lang/CharSequence;
     new-array v5, v8, [Ljava/lang/Object;
 
@@ -466,11 +466,11 @@
 
     move-result-object v3
 
-    .line 423
+    .line 422
     .local v3, "deniedQuantity":Ljava/lang/CharSequence;
     if-nez v2, :cond_1
 
-    .line 424
+    .line 423
     const v5, 0x7f0b0a45
 
     new-array v6, v8, [Ljava/lang/Object;
@@ -483,11 +483,11 @@
 
     goto :goto_0
 
-    .line 425
+    .line 424
     :cond_1
     if-nez v0, :cond_2
 
-    .line 426
+    .line 425
     const v5, 0x7f0b0a46
 
     new-array v6, v8, [Ljava/lang/Object;
@@ -500,7 +500,7 @@
 
     goto :goto_0
 
-    .line 428
+    .line 427
     :cond_2
     const v5, 0x7f0b0a47
 
@@ -524,7 +524,7 @@
     .param p1, "pos"    # I
 
     .prologue
-    .line 384
+    .line 383
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -540,7 +540,7 @@
     .locals 1
 
     .prologue
-    .line 376
+    .line 375
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mPkgOps:Landroid/app/AppOpsManager$PackageOps;
 
     return-object v0
@@ -551,7 +551,7 @@
     .param p1, "state"    # Lcom/android/settings/applications/AppOpsState;
 
     .prologue
-    .line 432
+    .line 431
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     iget-object v1, p1, Lcom/android/settings/applications/AppOpsState;->mOpSummaries:[Ljava/lang/CharSequence;
@@ -575,7 +575,7 @@
     .locals 1
 
     .prologue
-    .line 372
+    .line 371
     iget v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOrder:I
 
     return v0
@@ -588,14 +588,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 436
+    .line 435
     iget-object v1, p1, Lcom/android/settings/applications/AppOpsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 437
+    .line 436
     .local v0, "res":Landroid/content/res/Resources;
     iget-object v1, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
@@ -605,7 +605,7 @@
 
     if-lez v1, :cond_0
 
-    .line 438
+    .line 437
     iget-object v1, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
     iget-object v2, p1, Lcom/android/settings/applications/AppOpsState;->mOpLabels:[Ljava/lang/CharSequence;
@@ -614,7 +614,7 @@
 
     move-result-object v1
 
-    .line 440
+    .line 439
     :goto_0
     return-object v1
 
@@ -634,7 +634,7 @@
     .locals 2
 
     .prologue
-    .line 462
+    .line 461
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -658,25 +658,25 @@
     .param p2, "showEmptyText"    # Z
 
     .prologue
-    .line 445
+    .line 444
     invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->isRunning()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 446
+    .line 445
     const v0, 0x7f0b051c
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 454
+    .line 453
     :goto_0
     return-object v0
 
-    .line 448
+    .line 447
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
 
@@ -688,7 +688,7 @@
 
     if-lez v0, :cond_1
 
-    .line 449
+    .line 448
     invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v0
@@ -707,7 +707,7 @@
 
     goto :goto_0
 
-    .line 454
+    .line 453
     :cond_1
     if-eqz p2, :cond_2
 
@@ -729,7 +729,7 @@
     .locals 2
 
     .prologue
-    .line 458
+    .line 457
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -751,7 +751,7 @@
     .locals 1
 
     .prologue
-    .line 466
+    .line 465
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
     invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;

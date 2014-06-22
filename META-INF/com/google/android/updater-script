@@ -419,6 +419,7 @@ set_perm(0, 2000, 0755, "/system/bin/wpa_supplicant");
 set_perm(0, 2000, 0755, "/system/bin/xssm");
 set_perm(0, 2000, 0755, "/system/bin/xtwifi-client");
 set_perm(0, 2000, 0755, "/system/bin/xtwifi-inet-agent");
+set_perm(0, 2000, 0755, "/system/bin/strace");
 set_perm(0, 0, 0644, "/system/etc/NOTICE.html.gz");
 set_perm(0, 0, 0755, "/system/etc/acdbdata");
 set_perm(0, 0, 0644, "/system/etc/apns-conf.xml");

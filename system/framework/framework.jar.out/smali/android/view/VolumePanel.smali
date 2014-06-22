@@ -2525,6 +2525,8 @@
     .line 829
     const/16 v1, 0x18
 
+    invoke-virtual {v0, v1}, Landroid/media/ToneGenerator;->startTone(I)Z
+
     .line 830
     const/4 v1, 0x3
 

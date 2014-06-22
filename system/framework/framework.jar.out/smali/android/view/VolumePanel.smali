@@ -255,15 +255,7 @@
     iput-object p2, p0, Landroid/view/VolumePanel;->mAudioService:Landroid/media/AudioService;
 
     .line 287
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v4
-
-    iput-boolean v4, p0, Landroid/view/VolumePanel;->mUseMasterVolume:Z
+    const/4 v2, 0x0
 
     .line 289
     iget-boolean v4, p0, Landroid/view/VolumePanel;->mUseMasterVolume:Z
@@ -812,7 +804,7 @@
     .locals 5
 
     .prologue
-    const/4 v4, 0x4
+    const/16 v4, -0x8
 
     .line 557
     iget-object v2, p0, Landroid/view/VolumePanel;->mSliderGroup:Landroid/view/ViewGroup;
@@ -1313,11 +1305,7 @@
     .line 361
     iget-boolean v4, p0, Landroid/view/VolumePanel;->mVoiceCapable:Z
 
-    if-nez v4, :cond_1
-
     iget-boolean v4, p0, Landroid/view/VolumePanel;->mUseMasterVolume:Z
-
-    if-nez v4, :cond_1
 
     const/4 v4, 0x1
 
@@ -1327,7 +1315,7 @@
     .line 363
     iget-boolean v4, p0, Landroid/view/VolumePanel;->mShowCombinedVolumes:Z
 
-    if-nez v4, :cond_2
+    if-nez v4, :cond_1
 
     .line 364
     iget-object v4, p0, Landroid/view/VolumePanel;->mMoreButton:Landroid/view/View;
@@ -1361,13 +1349,12 @@
     .restart local v1    # "lp":Landroid/view/WindowManager$LayoutParams;
     .restart local v2    # "view":Landroid/view/View;
     .restart local v3    # "window":Landroid/view/Window;
-    :cond_1
     const/4 v4, 0x0
 
     goto :goto_0
 
     .line 367
-    :cond_2
+    :cond_1
     :try_start_1
     iget-object v4, p0, Landroid/view/VolumePanel;->mMoreButton:Landroid/view/View;
 
@@ -2537,8 +2524,6 @@
 
     .line 829
     const/16 v1, 0x18
-
-    invoke-virtual {v0, v1}, Landroid/media/ToneGenerator;->startTone(I)Z
 
     .line 830
     const/4 v1, 0x3

@@ -83,7 +83,7 @@
 
     const v6, 0x10802a0
 
-    move v7, v2
+    move v7, v11
 
     invoke-direct/range {v0 .. v7}, Landroid/view/VolumePanel$StreamResources;-><init>(Ljava/lang/String;IIIIIZ)V
 
@@ -104,7 +104,7 @@
 
     move v6, v12
 
-    move v10, v2
+    move v10, v11
 
     invoke-direct/range {v3 .. v10}, Landroid/view/VolumePanel$StreamResources;-><init>(Ljava/lang/String;IIIIIZ)V
 
@@ -125,7 +125,7 @@
 
     move v6, v2
 
-    move v10, v2
+    move v10, v11
 
     invoke-direct/range {v3 .. v10}, Landroid/view/VolumePanel$StreamResources;-><init>(Ljava/lang/String;IIIIIZ)V
 
@@ -146,7 +146,7 @@
 
     move v6, v14
 
-    move v10, v2
+    move v10, v11
 
     invoke-direct/range {v3 .. v10}, Landroid/view/VolumePanel$StreamResources;-><init>(Ljava/lang/String;IIIIIZ)V
 
@@ -188,7 +188,7 @@
 
     const v9, 0x10802a5
 
-    move v10, v11
+    move v10, v2
 
     invoke-direct/range {v3 .. v10}, Landroid/view/VolumePanel$StreamResources;-><init>(Ljava/lang/String;IIIIIZ)V
 
